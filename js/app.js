@@ -1,116 +1,116 @@
-'use strict'
+'use strict';
+// All Data
+function Book_data(name, imgPath, image, description, price, link) {
+  let object = {
+    // Book title
+    name: name,
+    // Image
+    image: image
+    // Rate Out of 5
+    , imgPath: imgPath
+    // Book Description
+    , description: description
+    // Book price , use 0 for free Book
+    , price: price
+    // Book Link , Use '' for hard copy book
+    , link: link
+  };
+  return object;
+}
+// Book Categories :
+const front_end_books = [
+  new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf')
+  , new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf')
+  , new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf')
+];
+const back_end_books = [
+  new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+
+  , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
+  , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
+  , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
+];
 // get element by id
-const front_end_div =document.getElementById('front_end_book');
-const back_end_div =document.getElementById('back_end_book');
+const front_end_ul = document.getElementById('front_end_book');
+const back_end_ul = document.getElementById('back_end_book');
+// front end book
+for (let i = 0; i < 5; i++) {
+  // create Book card element --> 8 element
+  const book_li = document.createElement('li');
+  const book_a = document.createElement('a');
+  const book_img = document.createElement('img');
+  const book_span = document.createElement('span');
+  const span_a1 = document.createElement('a');
+  const span_a2 = document.createElement('a');
+  const span_button1 = document.createElement('button');
+  const span_button2 = document.createElement('button');
+  // Arrange the elements
+  span_a1.appendChild(span_button1);
+  span_a2.appendChild(span_button2);
+  book_span.appendChild(span_a1);
+  book_span.appendChild(span_a2);
+  book_a.appendChild(book_img);
+  book_li.appendChild(book_a);
+  book_li.appendChild(book_span);
+  front_end_ul.appendChild(book_li);
+  // Define element properties
+  book_a.href = "/daitails.html";
+  book_a.target = '_blank';
+  book_img.src = front_end_books[i].image;
+  span_button1.textContent = 'Read';
+  span_button2.textContent = 'Download';
+  span_a1.href = front_end_books[i].link;
+  span_a1.target = '_blank';
+  span_a2.href = front_end_books[i].link;
+  span_a2.download = front_end_books[i].link;
 
-// Helper Function
-function createRatingBar(container ,rate){
-    const starts = document.createElement('img');
-    const start_div = document.createElement('div');
+  book_li.addEventListener('click' ,function (){
+    localStorage.setItem('book_index', i);
+    localStorage.setItem('book_category', 'front_end');
+  });
 
-    start_div.className="div3";
-    start_div.appendChild(starts);
-    container.appendChild(start_div);
-
-    starts.src="/img/ratings"+rate+".png";
-    starts.className="";
-}
-
-// front end book 
-
-for(let i=0;i<front_end_books.length;i++){
-
-    // create Book card element --> 8 element
-    const container = document.createElement('div');
-    const image = document.createElement('img');
-    const title = document.createElement('p');
-    const div2 = document.createElement('div');
-    const read_link = document.createElement('a');
-    const download_link = document.createElement('a');
-    const read = document.createElement('img');
-    const download = document.createElement('img');
-
-
-    // select class name to change Css style
-    container.className="container_class";
-    div2.className="div2";
-
-    // Arrange the elements
-    // main
-    front_end_div.appendChild(container);
-    container.appendChild(image);
-    container.appendChild(title);
-    container.appendChild(div2);
-    // div
-    div2.appendChild(read_link);
-    div2.appendChild(download_link);
-    // a tag
-    read_link.appendChild(read);
-    download_link.appendChild(download);
- 
-
-    // Define element properties
-    image.src = front_end_books[i].image;
-    title.textContent = front_end_books[i].name;
-    read.src="./img/read.png";
-    download.src="./img/cloud.png"
-    // read and download links
-    read_link.href= front_end_books[i].link;
-    download_link.href=front_end_books[i].link;
-    download_link.download = front_end_books[i].link;
-    read_link.target="_blank";
-    download_link.target="_blank";
-    
-    createRatingBar(container,front_end_books[i].rate);
 
 }
+// back end book
 
+for (let i = 0; i < 5; i++) {
+  // create Book card element --> 8 element
+  const book_li = document.createElement('li');
+  const book_a = document.createElement('a');
+  const book_img = document.createElement('img');
+  const book_span = document.createElement('span');
+  const span_a1 = document.createElement('a');
+  const span_a2 = document.createElement('a');
+  const span_button1 = document.createElement('button');
+  const span_button2 = document.createElement('button');
+  // Arrange the elements
+  span_a1.appendChild(span_button1);
+  span_a2.appendChild(span_button2);
+  book_span.appendChild(span_a1);
+  book_span.appendChild(span_a2);
+  book_a.appendChild(book_img);
+  book_li.appendChild(book_a);
+  book_li.appendChild(book_span);
+  back_end_ul.appendChild(book_li);
+  // Define element properties
+  book_img.src = back_end_books[i].image;
+  book_a.href = back_end_books[i].imgPath;
+  book_a.target = '_blank';
+  span_button1.textContent = 'Read';
+  span_button2.textContent = 'Download';
+  span_a1.href = back_end_books[i].link;
+  span_a1.target = '_blank';
+  span_a2.href = back_end_books[i].link;
+  span_a2.download = back_end_books[i].link;
 
-// back end book 
-
-for(let i=0;i<back_end_books.length;i++){
-
-    // create Book card element --> 8 element
-    const container = document.createElement('div');
-    const image = document.createElement('img');
-    const title = document.createElement('p');
-    const div2 = document.createElement('div');
-    const read_link = document.createElement('a');
-    const download_link = document.createElement('a');
-    const read = document.createElement('img');
-    const download = document.createElement('img');
-
-    // select class name to change Css style
-    container.className="container_class";
-    div2.className="div2";
-
-    // Arrange the elements
-    // main
-    back_end_div.appendChild(container);
-    container.appendChild(image);
-    container.appendChild(title);
-    container.appendChild(div2);
-    // div
-    div2.appendChild(read_link);
-    div2.appendChild(download_link);
-    // a tag
-    read_link.appendChild(read);
-    download_link.appendChild(download);
- 
-
-    // Define element properties
-    image.src = back_end_books[i].image;
-    title.textContent = back_end_books[i].name;
-    read.src="./img/read.png";
-    download.src="./img/cloud.png"
-    // read and download links
-    read_link.href= back_end_books[i].link;
-    download_link.href=back_end_books[i].link;
-    download_link.download = back_end_books[i].link;
-    read_link.target="_blank";
-    download_link.target="_blank";
-    
-    createRatingBar(container,front_end_books[i].rate);
+  
 }
-
-localStorage.setItem('book_category','back_end_books');

@@ -1,0 +1,128 @@
+:root{
+    --color1: #f48403;
+    --color2: #556433;
+    --color3: #032ff4;
+}
+
+main{
+    display: flex;  
+}
+
+#div1{
+    box-shadow: 1px 1px 5px 0px;
+ 
+    display: flex;
+    flex-direction: row;
+
+    width: 800px;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+
+#div2{
+    background-color: #03e9f4;
+    width: 400px;
+}
+
+#img_stars{
+    width:400px;
+}
+
+#img_book{
+  width: 400px;
+  height: 500px;
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+p{
+
+}
+
+img{
+
+}
+
+spane{
+
+}
+
+/* button{
+    width: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+} */
+
+a.button{
+    border-radius: .2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    opacity: 1;
+    transition: 0.25s;
+  }
+  .sec button{
+    padding: 1rem 1.3rem;
+    border-style: none;
+    background-color: #2c293b;
+    font-size: 1.3rem ;
+    color:#fff;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    font-family: 'Yellowtail', cursive;
+    transition: 0.25s;
+  }
+  .sec button:hover{
+    background-color:#03e9f4 ;
+    color: #2c293b;
+    border-radius: 0.5rem;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 0.5rem -0.3rem #03e9f4;
+  }
+
+/*************  Heder  ************/
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    color: #03e9f4;
+  }
+  a:hover{
+    opacity: 1;
+  } 
+header{
+  font-family: 'Yellowtail', cursive;
+  color: #03e9f4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 6.25rem;
+  animation: 1s fade 0.5s forwards;
+  opacity: 0;
+  background-color: #2c293b;
+}
+
+@keyframes fade {
+    100% {
+      opacity: 1;
+    }
+  }
+  header h2{
+    font-size: 2rem;
+  }
+  header nav ul{
+    font-size: 1.2rem;
+    display: flex;
+    margin-right: -1rem;
+  }
+  header nav ul li{
+    margin: 0 1rem;
+  }
