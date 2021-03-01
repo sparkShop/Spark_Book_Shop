@@ -74,7 +74,6 @@ section {
   color: #2c293b;
   font: bold 2rem 'Playfair Display', serif;
   padding:0 0 2rem 1.5rem;
-
 }
 .listSec li{
   text-align: center;
@@ -112,7 +111,6 @@ border: 1px solid #03e9f4;
   background-color:#03e9f4 ;
   color: #2c293b;
 }
-
 .listSec span:hover{
   border-radius: 0.5rem;
   transform: translateY(-0.3rem);
