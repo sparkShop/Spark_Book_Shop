@@ -29,11 +29,11 @@ const front_end_books = [
   , new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf')
 ];
 const back_end_books = [
-  new Book_data('front_end_books', 5, 'https://www.google.com', '../images/HTML5 and CSS3 All-in-One For Dummies.jpg', '', '/../Javascript_and_jquery_interactive_jon_du.pdf')
-  , new Book_data('front_end_books', 5, 'https://www.google.com', '../images/HTML5 and CSS3 All-in-One For Dummies.jpg', '', '/../Javascript_and_jquery_interactive_jon_du.pdf')
-  , new Book_data('front_end_books', 5, 'https://www.google.com', '../images/HTML5 and CSS3 All-in-One For Dummies.jpg', '', '/../Javascript_and_jquery_interactive_jon_du.pdf')
-  , new Book_data('front_end_books', 5, 'https://www.google.com', '../images/HTML5 and CSS3 All-in-One For Dummies.jpg', '', '/../Javascript_and_jquery_interactive_jon_du.pdf')
-  , new Book_data('front_end_books', 5, 'https://www.google.com', '../images/HTML5 and CSS3 All-in-One For Dummies.jpg', '', '/../Javascript_and_jquery_interactive_jon_du.pdf')
+  new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
 
   , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
   , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
