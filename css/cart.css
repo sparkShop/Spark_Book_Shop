@@ -1,4 +1,3 @@
-<<<<<<< HEAD
   
   /* Body/Header stuff */
   body {
@@ -16,7 +15,7 @@
     color: rgb(78, 62, 62);
   }
   
-  .books-cart {
+  #books-cart {
     margin-top: -45px;
         /* display: flex; */
         /* background-color: blue;
@@ -45,111 +44,33 @@
   }
   
   .book-price {
-=======
-
-/* Global settings */
-/* Global "table" column settings */
-.product-image {
-    float: left;
-    width: 20%;
-  }
-  
-  .product-details {
-    float: left;
-    width: 37%;
-  }
-  
-  .product-price {
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
     float: left;
     width: 12%;
   }
   
-<<<<<<< HEAD
   .book-quantity {
-=======
-  .product-quantity {
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
     float: left;
     width: 10%;
   }
   
-<<<<<<< HEAD
   .book-remove {
-=======
-  .product-removal {
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
     float: left;
     width: 9%;
   }
   
-<<<<<<< HEAD
   .books-quantity-price {
-=======
-  .product-line-price {
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
     float: left;
     width: 12%;
     text-align: right;
   }
   
-<<<<<<< HEAD
 
   /* headers */
   .headers label {
-=======
-  /* This is used as the traditional .clearfix class */
-  .group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
-  .group:after,
-  .shopping-cart:after,
-  .column-labels:after,
-  .product:after,
-  .totals-item:after {
-    content: '';
-    display: table;
-  }
-  
-  .group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
-    clear: both;
-  }
-  
-  .group, .shopping-cart, .column-labels, .product, .totals-item {
-    zoom: 1;
-  }
-  
-  /* Apply clearfix in a few places */
-  /* Apply dollar signs */
-  .product .product-price:before, .product .product-line-price:before, .totals-value:before {
-    content: '$';
-  }
-  
-  /* Body/Header stuff */
-  body {
-    padding: 0px 30px 30px 20px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 100;
-  }
-  
-  h1 {
-    font-weight: 100;
-  }
-  
-  label {
-    color: #aaa;
-  }
-  
-  .shopping-cart {
-    margin-top: -45px;
-  }
-  
-  /* Column headers */
-  .column-labels label {
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid #eee;
   }
-<<<<<<< HEAD
   .headers .book-image, .headers .book-description, .headers .book-remove {
     text-indent: -9999px;
   }
@@ -186,53 +107,15 @@
     width: 40px;
   }
   .book .remove-book {
-=======
-  .column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
-    text-indent: -9999px;
-  }
-  
-  /* Product entries */
-  .product {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-  }
-  .product .product-image {
-    text-align: center;
-  }
-  .product .product-image img {
-    width: 100px;
-  }
-  .product .product-details .product-title {
-    margin-right: 20px;
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-  }
-  .product .product-details .product-description {
-    margin: 5px 20px 5px 0;
-    line-height: 1.4em;
-  }
-  .product .product-quantity input {
-    width: 40px;
-  }
-  .product .remove-product {
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
     border: 0;
     padding: 4px 8px;
     background-color: #c66;
     color: #fff;
-<<<<<<< HEAD
     font-family: 'Asap', sans-serif;
     font-size: 12px;
     border-radius: 3px;
   }
   .book .remove-book:hover {
-=======
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-    font-size: 12px;
-    border-radius: 3px;
-  }
-  .product .remove-product:hover {
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
     background-color: #a44;
   }
   
@@ -255,26 +138,16 @@
     text-align: right;
   }
   .totals .totals-item-total {
-<<<<<<< HEAD
     font-family: 'Asap', sans-serif;
   }
   
   .confirm-order {
     float: right;
-=======
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-  }
-  
-  .checkout {
-    float: right;
-    border: 0;
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
     margin-top: 20px;
     padding: 6px 25px;
     background-color: #6b6;
     color: #fff;
     font-size: 25px;
-<<<<<<< HEAD
   }
   
   .confirm-order {
@@ -283,9 +156,9 @@
 
 
   /* ------ */
-  .books-cart:before, .headers:before, .book:before, .totals-item:before,
+  #books-cart:before, .headers:before, .book:before, .totals-item:before,
   
-  .books-cart:after,
+  #books-cart:after,
   .headers:after,
   .book:after,
   .totals-item:after {
@@ -293,11 +166,11 @@
     display: table;
   }
   
- .books-cart:after, .headers:after, .book:after, .totals-item:after {
+ #books-cart:after, .headers:after, .book:after, .totals-item:after {
     clear: both;
   }
   
- .books-cart, .headers, .book, .totals-item {
+ #books-cart, .headers, .book, .totals-item {
     zoom: 1;
   }
   
@@ -309,13 +182,12 @@
 
 /* fix book rate header when minimize
   .headers .book-rate, */
-=======
-    border-radius: 3px;
-  }
+
+  tr {display: flex;
+justify-content: space-between; 
+margin: 50px;  
+}
+tr img{
+  max-width: 100px;
+}
   
-  .checkout:hover {
-    background-color: #494;
-  }
-  
- 
->>>>>>> 43958af1a76584d59ed7a329638b3fd258d77ab1
