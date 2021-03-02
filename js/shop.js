@@ -238,8 +238,8 @@ Cart.prototype.removeItem = function (book) {
 
 // add to cart button
 let newcart = new Cart([]);
-let container = document.getElementById('table1');
-container.addEventListener('click',clickHandler);
+const Container = document.getElementById('buttonsContainer');
+Container.addEventListener('click', clickHandler);
 function clickHandler(event) {
   event.preventDefault();
   for (let i = 0; i < Book.allBooks.length; i++) {
