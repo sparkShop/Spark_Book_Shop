@@ -247,10 +247,11 @@ function clickHandler(event) {
   event.preventDefault();
   for (let i = 0; i < Book.allBooks.length; i++) {
     if (event.target.id === Book.allBooks[i].uniqueID) {
-     let a = Book.allBooks[i]
+      let a = Book.allBooks[i];
       newcart.addBooksToCart(a);
     }
   }
+  console.log(newcart.allbooksAdded);
   newcart.saveBooksLocalStorage();
   // console.log(localStorage);
   // console.log(localStorage.getItem('newcart'));
