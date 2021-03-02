@@ -32,9 +32,9 @@ const front_end_books = [
 const back_end_books = [
   new Book_data('front_end_books', 'https://www.google.com', '../images/pythonhardway.jpg', '', '', 'https://download1503.mediafire.com/3ot725cs88rg/fxlxksg556m6irf/Learn+Python+The+Hard+Way+3rd+Edition.pdf')
   , new Book_data('front_end_books', 'https://www.google.com', '../images/pythonprogramming.jpg', '', '', 'https://download1503.mediafire.com/yvn5g90ojvpg/wmwg2yers1t894n/Python+Programming.++Python+Programming+for+Beginners%2C+Python+Programming+for+Intermediates+%28+PDFDrive+%29.pdf')
-  , new Book_data('front_end_books', 'https://www.google.com', '../images/Java.jpg', '', '', 'https://download1349.mediafire.com/4xk88zz6yesg/omdbdraebmulnmm/Java+for+Absolute+Beginners_+Learn+to+Program+the+Fundamentals+the+Java+9%2B+Way+%28+PDFDrive+%29.pdf')
-  , new Book_data('front_end_books', 'https://www.google.com', '../images/php.jpg', '', '', 'https://download1654.mediafire.com/bcodrvn7vl9g/4qfedd8g40sxk3b/Pro+PHP+and+jQuery%2C+2nd+Edition_+Take+your+dynamic+PHP+7+apps+to+the+next+level+by+adding+a+JavaScript+layer+using+jQuery+%28+PDFDrive+%29.pdf')
-  , new Book_data('front_end_books', 'https://www.google.com', '../images/Net.jpg', '', '', 'https://download1507.mediafire.com/q0ehvdwr7yyg/ly59rvjqsf262lk/Applied+Cryptography+in+.NET+and+Azure+Key+Vault_+A+Practical+Guide+to+Encryption+in+.NET+and+.NET+Core+%28+PDFDrive+%29.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/Java.jpg', '', '', 'https://download1349.mediafire.com/2pkz7defd7ig/omdbdraebmulnmm/Java+for+Absolute+Beginners_+Learn+to+Program+the+Fundamentals+the+Java+9%2B+Way+%28+PDFDrive+%29.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/php.jpg', '', '', 'https://download1654.mediafire.com/bf6dfnhxxjbg/4qfedd8g40sxk3b/Pro+PHP+and+jQuery%2C+2nd+Edition_+Take+your+dynamic+PHP+7+apps+to+the+next+level+by+adding+a+JavaScript+layer+using+jQuery+%28+PDFDrive+%29.pdf')
+  , new Book_data('front_end_books', 'https://www.google.com', '../images/Net.jpg', '', '', 'https://download1507.mediafire.com/5uf09cw6yyog/ly59rvjqsf262lk/Applied+Cryptography+in+.NET+and+Azure+Key+Vault_+A+Practical+Guide+to+Encryption+in+.NET+and+.NET+Core+%28+PDFDrive+%29.pdf')
 
   , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
   , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')

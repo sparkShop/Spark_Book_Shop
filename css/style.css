@@ -188,7 +188,7 @@ justify-content: center;
 }
 .listSec ul li img{
   /* width: 100%; */
-  max-width: 80%;
+  max-width:14rem;
   min-height: 22rem ;
   border-radius: 2rem;
   /* box-shadow: 0 0 1rem #aaa; */

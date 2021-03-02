@@ -66,6 +66,7 @@ section {
   /* width: 100%; */
   max-width: 80%;
   min-height: 22rem ;
+  max-height: 22rem;
   border-radius: 2rem;
   box-shadow: 0 0 1rem #2c293b;
   transition:  0.25s;
