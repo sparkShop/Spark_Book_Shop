@@ -22,9 +22,15 @@ span a{
   opacity: 1;
 }
 /*--------------------------------------------------headerStyle---------------------------------------------------*/
+header a{
+  opacity: 1;
+}
+header a:hover{
+  opacity: 0.75;
+}
 header{
   font-family: 'Yellowtail', cursive;
-  color: #fff;
+  color: var(--first);
   position: absolute;
   width: 100%;
   display: flex;
@@ -62,11 +68,11 @@ cursor: pointer;
 }
 /*------------------------------------------------secSectionStyle-------------------------------------------------*/
 header a{
-  color: #fff;
+  color: var(--first);
 }
 .sec {
   font-family: 'Yellowtail', cursive;
-  color:#fff;
+  color:var(--first);
   position:relative;
   justify-content: center;
   text-align: center;
@@ -102,7 +108,7 @@ a.button{
   border-style: none;
   background-color: var(--second);
   font-size: 1.3rem ;
-  color:#fff;
+  color:var(--first);
   letter-spacing: 1px;
   border-radius: 2rem;
   font-family: 'Yellowtail', cursive;
