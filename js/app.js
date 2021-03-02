@@ -16,6 +16,7 @@ function Book_data(name, imgPath, image, description, price, link) {
     , link: link
   };
   return object;
+
 }
 // Book Categories :
 const front_end_books = [
@@ -100,3 +101,4 @@ for (let i = 0; i < 5; i++) {
   span_a2.download = back_end_books[i].link;
 
 }
+// ---
