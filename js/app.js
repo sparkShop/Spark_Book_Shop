@@ -24,9 +24,6 @@ const front_end_books = [
   , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
   , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
   , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
-  , new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf')
-  , new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf')
-  , new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf')
 ];
 const back_end_books = [
   new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
@@ -34,10 +31,6 @@ const back_end_books = [
   , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
   , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
   , new Book_data('front_end_books', 'https://www.google.com', '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
-
-  , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
-  , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
-  , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
 ];
 // get element by id
 const front_end_ul = document.getElementById('front_end_book');
@@ -63,7 +56,7 @@ for (let i = 0; i < 5; i++) {
   book_li.appendChild(book_span);
   front_end_ul.appendChild(book_li);
   // Define element properties
-  book_a.href = "/daitails.html";
+  //book_a.href = "/daitails.html";
   book_a.target = '_blank';
   book_img.src = front_end_books[i].image;
   span_button1.textContent = 'Read';
@@ -72,12 +65,6 @@ for (let i = 0; i < 5; i++) {
   span_a1.target = '_blank';
   span_a2.href = front_end_books[i].link;
   span_a2.download = front_end_books[i].link;
-
-  book_li.addEventListener('click' ,function (){
-    localStorage.setItem('book_index', i);
-    localStorage.setItem('book_category', 'front_end');
-  });
-
 
 }
 // back end book
@@ -103,8 +90,8 @@ for (let i = 0; i < 5; i++) {
   back_end_ul.appendChild(book_li);
   // Define element properties
   book_img.src = back_end_books[i].image;
-  book_a.href = back_end_books[i].imgPath;
-  book_a.target = '_blank';
+  // book_a.href = back_end_books[i].imgPath;
+  // book_a.target = '_blank';
   span_button1.textContent = 'Read';
   span_button2.textContent = 'Download';
   span_a1.href = back_end_books[i].link;
@@ -112,5 +99,4 @@ for (let i = 0; i < 5; i++) {
   span_a2.href = back_end_books[i].link;
   span_a2.download = back_end_books[i].link;
 
-  
 }

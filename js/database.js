@@ -35,7 +35,6 @@ function Book_data(name, rate, image, description, price, link) {
     , new Book_data('front_end_books', 4, '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
     , new Book_data('front_end_books', 4, '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
     , new Book_data('front_end_books', 4, '../images/A Tour of C++.jpg', '', '', '../book1.pdf')
-  
     , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
     , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
     , new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf')
@@ -55,6 +54,7 @@ function paid_Book_data(name, price, author, rate, description,image) {
   };
   return object;
 }
+
 
   const bnameArr = ['Learning Web Design: A Beginner\'s Guide to HTML, CSS, JavaScript, and Web Graphics 5th Edition',
 'HTML and CSS QuickStart Guide: The Simplified Beginners Guide to Developing a Strong Coding Foundation, Building Responsive Websites,and Mastering the Fundamentals of Modern Web Design',
@@ -81,32 +81,54 @@ const authorArr = ['Jennifer Robbins','David DuRocher','Elisabeth Robson','LCF P
 const rateArr = [4.5, 5,4.6,4.5,4.7, 4.7, 4.6, 4.6, 4.7, 4, 4.5, 4.6, 4.6, 4.5, 4.6, 4.8, 4.8, 4.3, 4.4, 4.4, 4.6, 4.5, 4.6, 4.8, 4.4,];
 
 const descriptionArr = ['','','','','','','','','','','','','','','','','','','','','','','','','']
-const imageArr =['./images/Learning Web Design.jpg',
-  './images/HTML and CSS QuickStart Guide.jpg',
-  './images/Head First HTML and CSS.jpg',
-  './images/Learn CSS in One Day and Learn It Well.jpg',
-  './images/Responsive Web Design with HTML5 and CSS.jpg',
-  './images/JavaScript The Definitive Guide.jpg',
-  './images/Eloquent JavaScript.jpg',
-  './images/Head First JavaScript Programming.jpg',
-  './images/Learn JavaScript Quickly.jpg',
-  './images/Javascript for Beginners.jpg',
-  './images/HTML5 for Masterminds.jpg',
-  './images/HTML5 and CSS3 All-in-One For Dummies.jpg',
-  './images/HTML5 Pocket Reference.jpg',
-  './images/CSS  The Definitive Guide.jpg',
-  './images/Python Crash Course.jpg',
-  './images/Hands-On Machine Learning with Scikit-Learn.jpg',
-  './images/Python for Everybody.jpg',
-  './images/Build Your Own AI Investor.jpg',
-  './images/Learn Python Quickly.jpg',
-  './images/Head First Design Patterns.jpg',
-  './images/Elements of Programming Interviews in Java.jpg.jpg',
-  './images/Starting Out with Java.jpg',
-  './images/JavaScript and JQuery.jpg',
-  './images/A Tour of C++.jpg',
-  './images/C++ in One Hour a Day.jpg',
+const imageArr =['./images/Learning Web Design.jpg',  // 0
+  './images/HTML and CSS QuickStart Guide.jpg',  // 1
+  './images/Head First HTML and CSS.jpg',  // 2
+  './images/Learn CSS in One Day and Learn It Well.jpg',  // 3
+  './images/Responsive Web Design with HTML5 and CSS.jpg',  // 4
+  './images/JavaScript The Definitive Guide.jpg',  // 5
+  './images/Eloquent JavaScript.jpg',  // 6
+  './images/Head First JavaScript Programming.jpg',  // 7
+  './images/Learn JavaScript Quickly.jpg',  // 8
+  './images/JJavascript for Beginners.jpg',  // 9
+  './images/HTML5 for Masterminds.jpg',  // 10
+  './images/HTML5 and CSS3 All-in-One For Dummies.jpg',  // 11
+  './images/HTML5 Pocket Reference.jpg',  // 12
+  './images/CSS  The Definitive Guide.jpg',  // 13
+  './images/Python Crash Course.jpg',  // 14
+  './images/Hands-On Machine Learning with Scikit-Learn.jpg',  // 15
+  './images/Python for Everybody.jpg',  // 16
+  './images/Build Your Own AI Investor.jpg', // 17
+  './images/Learn Python Quickly.jpg', // 18
+  './images/Head First Design Patternsn.jpg',  // 19
+  '/images/Elements of Programming Interviews in Java.jpg',  // 20
+  './images/Starting Out with Java.jpg',  // 21
+  './images/JavaScript and JQuery.jpg',  // 22
+  './images/A Tour of C++.jpg',  // 23
+  './images/C++ in One Hour a Day.jpg',  // 24
 ];
+ 
+
+            
+const tag_html=[1,2];
+const tag_css=[1,2,3,4,11];
+const tag_javaScript = [5,6,7,8,9,22];
+const tag_html5=[4,10,11,12];
+const python = [14,16,18];
+const tag_c_plus = [23,24];
+const tag_web_Design = [0,1,2,3,4,10,11,12,13];
+const tag_beginners = [0,2,5,6,7,8,14,15,16,17,18];
+const tag_advanced = [1,3,4,9,10,11,12,13,19,20,21,22,23,24];
+const tag_cheap_book = [3,8,9,10,11,12,14,18,19];
+
+
+
+const tags_name =['HTML' , 'CSS' ,'JavaScript' ,'HTML 5' ,'Python' , 'C++' ,
+ 'web Design' , 'Beginners' ,'Advanced' ,'Cheap Book'] ;
+
+const tags =[tag_html,tag_css,tag_javaScript,tag_html5,python,tag_c_plus,
+  tag_web_Design,tag_beginners,tag_advanced,tag_cheap_book];
+
 const paid_Book = [];
 
 for (let i = 0;i<bnameArr.length;i++){
