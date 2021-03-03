@@ -30,19 +30,19 @@ const uniqueIDArr = [
 ];
 
 const bnameArr = [
-  'Learning Web Design: A Beginner\'s Guide to HTML, CSS, JavaScript, and Web Graphics 5th Edition',
+  "Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics 5th Edition",
   'HTML and CSS QuickStart Guide: The Simplified Beginners Guide to Developing a Strong Coding Foundation, Building Responsive Websites,and Mastering the Fundamentals of Modern Web Design',
-  'Head First HTML and CSS: A Learner\'s Guide to Creating Standards-Based Web Pages 2nd Edition',
+  "Head First HTML and CSS: A Learner's Guide to Creating Standards-Based Web Pages 2nd Edition",
   'CSS (with HTML5): Learn CSS in One Day and Learn It Well. CSS for Beginners with Hands-on Project. Includes HTML5. (Learn Coding Fast with Hands-On Project Book 2)',
   'Responsive Web Design with HTML5 and CSS: Develop future-proof responsive websites using the latest HTML5 and CSS techniques, 3rd Edition',
-  'JavaScript The Definitive Guide Master the World\'s Most-Used Programming Language',
+  "JavaScript The Definitive Guide Master the World's Most-Used Programming Language",
   'Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming Paperback',
   'Head First JavaScript Programming: A Brain-Friendly Guide',
   'Learn JavaScript Quickly: A Complete Beginner’s Guide to Learning JavaScript, Even If You’re New to Programming (Crash Course With Hands-On Project)',
   'Javascript for Beginners: The Simplified for Absolute Beginner’s Guide to Learn and Understand Computer Programming Coding with Javascript Step by Step. Basics Concepts and Practice Examples Inside',
   'HTML5 for Masterminds, 3rd Edition: How to take advantage of HTML5 to create responsive websites and revolutionary applications',
   'HTML5 and CSS3 All-in-One For Dummies',
-  'HTML5 Pocket Reference: Quick, Comprehensive, Indispensable (Pocket Reference (O\'Reilly))',
+  "HTML5 Pocket Reference: Quick, Comprehensive, Indispensable (Pocket Reference (O'Reilly))",
   'CSS: The Definitive Guide: Visual Presentation for the Web',
   'Python Crash Course, 2nd Edition A Hands-On, Project-Based Introduction to Programming',
   'Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems',
@@ -50,7 +50,7 @@ const bnameArr = [
   'Build Your Own AI Investor: With Machine Learning and Python, Step by Step',
   'Learn Python Quickly: A Complete Beginner’s Guide to Learning Python, Even If You’re New to Programming',
   'Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software',
-  'Elements of Programming Interviews in Java: The Insiders\' Guide',
+  "Elements of Programming Interviews in Java: The Insiders' Guide",
   'Starting Out with Java',
   'JavaScript and JQuery: Interactive Front-End Web Development',
   'A Tour of C++ (C++ In-Depth Series)',
@@ -192,7 +192,6 @@ function createBooks() {
 }
 createBooks();
 
-
 // added book Constructor
 
 const BookAdded = function (bookadded) {
@@ -202,11 +201,11 @@ const BookAdded = function (bookadded) {
 // Cart Constructor
 const Cart = function (allbooksAdded) {
   this.allbooksAdded = allbooksAdded;
-  if(localStorage.length){
-    this.allbooksAdded=JSON.parse(localStorage.getItem('newcart'));
+  if (localStorage.length) {
+    this.allbooksAdded = JSON.parse(localStorage.getItem('newcart'));
   }
 };
-  //create array that has all added books
+//create array that has all added books
 Cart.prototype.addBooksToCart = function (bookadded) {
   this.allbooksAdded.push(new BookAdded(bookadded));
 };
