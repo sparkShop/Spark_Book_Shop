@@ -1,10 +1,25 @@
 'use strict';
+// table and headers creation
+
+// const headers = [
+//   'Book image',
+//   'Book name',
+//   'Book price',
+//   'Book rate',
+//   'Book author',
+// ];
 
 const table = document.getElementById('table-cart');
 let trEl = document.createElement('tr');
 table.appendChild(trEl);
-let total = 0;
-let numOfbook = 0;
+
+// for (let i = 0; i < headers.length; i++) {
+//   const thEl = document.createElement('th');
+//   trEl.appendChild(thEl);
+//   thEl.textContent = headers[i];
+// }
+
+// cart new Cart instance, while newcart is the key for the LS
 
 let cart;
 let booksFromLS;
@@ -14,7 +29,6 @@ function updateLocal() {
     booksFromLS = JSON.parse(localStorage.newcart);
     // eslint-disable-next-line no-undef
     cart = new Cart(booksFromLS);
-    numOfbook = parseInt(booksFromLS.length);
   }
 }
 
@@ -44,7 +58,6 @@ function renderCart() {
     trEl.appendChild(tdEl5);
     tdEl5.textContent = 'X';
     tdEl5.setAttribute('id', booksFromLS[i].bookadded.uniqueID);
-    total += parseInt(booksFromLS[i].bookadded.price);
   }
 }
 
