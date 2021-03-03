@@ -8,7 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/detailsStyle.css">
-    <title>Document</title>
+    <title>Details</title>
+    <script src="https://kit.fontawesome.com/39e3781d8a.js" crossorigin="anonymous"></script>
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Playfair+Display&family=Yellowtail&display=swap'
+        rel='stylesheet'>
+
 </head>
 <body>
     <header>
@@ -17,38 +22,67 @@
             <ul>
                 <li><a href='./index.html'>HOME</a></li>
                 <li><a href='./shop.html'>SHOP</a></li>
-                <li><a href='./cart.html'>CART (<span id="cartNo"></span>)</a></li>
-                <li><a href='#'>ABOUT US</a></li>
+                <li><a href='./cart.html'>CART(<span id="cartNo"></span>)</a></li>
+                <li><a href='./aboutus.html'>ABOUT US</a></li>
             </ul>
         </nav>
     </header>
     
 
     <main id="addToCartButtons">
+        <section id="section">
         <div id="div1">
-            <img id="img_book" src="https://placehold.it/400x500/ddd/" alt="">
+            <img id="img_book" >
             <div id="div2">
-                <h1 id="title">Learning Web Design: A Beginner\'s Guide to HTML</h1>
-                <h2 id="author">Jennifer Robbins</h2>
-                <h3 id="price_text">35$</h3>
                 <p id="description"></p> 
+                <h2 id="author">Jennifer Robbins</h2>
                 <span id = "book_tags">
                     <button id="tag1_ele">tag1</button>
                     <button id="tag2_ele">tag2</button>
                     <button id="tag3_ele">tag3</button>
                     <button id="tag4_ele">tag4</button>
                 </span>
-              
+                
                 <span id = "cart_span">
-                    <button id = "add_cart_bt">Add To Cart</button>
+                    <button id = "add_cart_bt">Add To Cart &nbsp(<span id="price_text">35$</span>)</button>
+                    
                 </span>
             </div>
         </div>
-
         <ul id="related_book_ul" class="listSec"></ul>
+    </section>
     </main>
 
     <footer>
+        <section>
+            <section>
+                <h2>Popular Websites</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></li>
+                    <li><a href="https://www.sololearn.com" target="_blank">SOLOLEARN</a></li>
+                    <li><a href="https://www.udemy.com/courses/search/?price=price-free&q=full+stack+web+development&sort=relevance&src=sac"
+                            target="_blank">UDEMY</a></li>
+                    <li><a href="https://www.freecodecamp.org" target="_blank">FREECODECAMP</a></li>
+                    <li><a href="https://upskillcourses.com" target="_blank">UPSKILL</a></li>
+                    <li><a href="https://www.edx.org">EDX</a></li>
+                </ul>
+            </section>
+            <p>&copy;Spark_Book_Shop <br> 2021</p>
+            <section>
+             
+                <ul>
+                    <li><a href="https://github.com/ltuc" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/showcase/ltuc/about/" target="_blank"><i
+                                class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/ltucjo?lang=en" target="_blank"><i
+                                class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/LTUC.JO/" target="_blank"><i
+                                class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/ltuc.jo/?hl=en" target="_blank"><i
+                                class="fab fa-instagram fa-2x"></i></a></li>
+                </ul>
+            </section>
+        </section>
         <script src="./js/database.js"></script>
         <script src='./js/books.js'></script>
         <script src='./js/shop.js'></script>

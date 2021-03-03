@@ -27,7 +27,9 @@ a:hover {
   --fifth: #ffd700;
   --sixth: #fff;
 }
-
+button{
+  outline: none;
+}
 span a {
   opacity: 1;
 }
@@ -75,6 +77,9 @@ header nav ul {
 header nav ul li {
   margin: 0 1rem;
 }
+header a {
+  color: var(--first);
+}
 
 section {
   display: flex;
@@ -87,11 +92,8 @@ button:hover {
   cursor: pointer;
 }
 
-/*------------------------------------------------secSectionStyle-------------------------------------------------*/
 
-header a {
-  color: var(--first);
-}
+/*------------------------------------------------secSectionStyle-------------------------------------------------*/
 
 .sec {
   font-family: 'Yellowtail', cursive;
@@ -257,6 +259,7 @@ a.button {
   box-shadow: 0 0.5rem 2rem -0.3rem var(--first);
   transform: translateY(-0.3rem);
   border: 1px solid var(--first);
+  cursor: pointer;
 }
 
 .listSec button {
@@ -264,7 +267,7 @@ a.button {
   margin: 1rem 0;
   border-style: none;
   background-color: var(--second);
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: var(--first);
 }
 
@@ -294,11 +297,14 @@ a.button {
 .para {
   margin-bottom: 4rem;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--fifth);
+  line-height: 2;
+  background-color: var(--third);
+  letter-spacing: 2px;
+  padding: 1rem;
 }
-
 /* .listSec button:hover{
   border:#ccc 1px solid;
   box-shadow: 0 0 .5rem .2rem #ccc;
@@ -324,7 +330,8 @@ footer {
 
 footer p {
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
+  margin: 2rem 14rem 0 0 ;
 }
 
 footer a {
@@ -338,16 +345,17 @@ footer li {
 footer>section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 0;
+  padding: 0 5rem 1rem;
 }
 
 footer section section {
   display: block;
-  width: 100%;
+
   padding: 1.2rem 0 0;
+  text-align: left;
 }
 
 footer ul {
@@ -355,7 +363,7 @@ footer ul {
   align-items: center;
   text-align: left;
   width: 50%;
-  margin: 0 auto;
+  margin: 0 ;
 }
 
 footer li {
@@ -367,10 +375,5 @@ footer li {
 footer h2 {
   font-size: 1.2rem;
   padding: 0 0 1rem .5rem;
-  width: 50%;
-  margin: 0 auto;
+  margin: 0 ;
 }
-
-/* main section{
-    background-image: url(./../images/section.jpg);
-    width: 100%;*/

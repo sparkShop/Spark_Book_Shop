@@ -29,6 +29,9 @@ header a:hover, footer a:hover {
 }
 
 header {
+  position: fixed;
+  top:0;
+  z-index: 1;
   font-family: 'Yellowtail', cursive;
   color: var(--first);
   width: 100%;
@@ -72,8 +75,11 @@ section {
   flex-direction: column;
   align-items: flex-start;
   padding: 4rem 2rem;
+  margin-top: 5rem;
 }
-
+button{
+  outline: none;
+}
 .listSec ul {
   display: flex;
   justify-content: space-evenly;
@@ -184,7 +190,8 @@ footer {
 
 footer p {
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
+  margin: 2rem 14rem 0 0 ;
 }
 
 footer a {
@@ -198,17 +205,17 @@ footer li {
 footer>section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 0;
+  padding: 0 5rem 1rem;
 }
 
 footer section section {
   display: block;
-  width: 50%;
+
   padding: 1.2rem 0 0;
-  margin: 0;
+  text-align: left;
 }
 
 footer ul {
@@ -216,7 +223,7 @@ footer ul {
   align-items: center;
   text-align: left;
   width: 50%;
-  margin: 0 auto;
+  margin: 0 ;
 }
 
 footer li {
@@ -228,8 +235,7 @@ footer li {
 footer h2 {
   font-size: 1.2rem;
   padding: 0 0 1rem .5rem;
-  width: 50%;
-  margin: 0 auto;
+  margin: 0 ;
 }
 
 img {

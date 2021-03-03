@@ -10,4 +10,6 @@ margin: 50px;
 tr img{
   max-width: 100px;
 }
-  
+button{
+  outline: none;
+}

@@ -1,21 +1,42 @@
+* {
+  box-sizing: border-box;
+}
 
-*{
-    box-sizing:border-box;
+html {
+  font: normal 16px 'Playfair Display', serif;
+  background-color: var(--second);
 }
-  html{
-    font: normal 16px 'Playfair Display', serif;
+
+a {
+  text-decoration: none;
+  opacity: 1;
+  color: var(--first);
 }
-  a{
-    text-decoration: none;
-    opacity: 0.75;
-    color: #03e9f4;
-  }
-  a:hover{
-    opacity: 1;
-  } 
-header{
+
+
+:root {
+  --first: #f5c611;
+  --second: #121212;
+  --third: #000;
+  --fourth: #ccc;
+  --fifth: #ffd700;
+  --sixth: #fff;
+}
+
+header a, footer a {
+  opacity: 1;
+}
+
+header a:hover, footer a:hover {
+  opacity: 0.75;
+}
+
+header {
+  position: fixed;
+  top: 0;  
+  z-index: 1;
   font-family: 'Yellowtail', cursive;
-  color: #03e9f4;
+  color: var(--first);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -23,23 +44,30 @@ header{
   padding: 1.2rem 6.25rem;
   animation: 1s fade 0.5s forwards;
   opacity: 0;
-  background-color: #2c293b;
+  background-color: var(--third);
 }
+
 @keyframes fade {
   100% {
     opacity: 1;
   }
 }
-header h2{
+
+header h2 {
   font-size: 2rem;
 }
-header nav ul{
+
+header nav ul {
   font-size: 1.2rem;
   display: flex;
   margin-right: -1rem;
 }
-header nav ul li{
+
+header nav ul li {
   margin: 0 1rem;
+}
+header a {
+  color: var(--first);
 }
 section {
   display: flex;
@@ -48,9 +76,10 @@ section {
   padding: 3rem 2.5rem;
 }
 .listSec  {
+  margin-top: 5rem;
   flex-direction: column;
   align-items: flex-start;
-  padding:4rem 2rem;
+  padding:0 2rem;
 }
 .listSec ul{
   display: flex;
@@ -63,20 +92,21 @@ section {
 }
 .listSec li h3{
     text-align: center;
-    margin: 1rem auto;
-    color: #2c293b;
+    margin: 0 0 4rem;
+    color: var(--first);
     font-weight: bold;
 }
 .listSec ul li img{
   /* width: 100%; */
   max-width: 80%;
   min-height: 22rem ;
+  max-height: 22rem;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem #2c293b;
+  box-shadow: 0 0 1rem var(--second);
   transition:  0.25s;
 }
 .listSec h2{
-  color: #2c293b;
+  color: var(--second);
   font: bold 2rem 'Playfair Display', serif;
   padding:0 0 2rem 1.5rem;
 }
@@ -90,22 +120,25 @@ section {
 }
 .listSec img:hover{
 border:none;
-box-shadow: 0 0.5rem 2rem -0.3rem #03e9f4;
+box-shadow: 0 0.5rem 2rem -0.3rem var(--first);
 transform: translateY(-0.3rem);
-border: 1px solid #03e9f4;
+border: 1px solid var(--first);
 }
 .listSec button{
   padding: .8rem;
   margin: 1rem 0;
   border-style: none;
-  background-color: #2c293b;
+  background-color: var(--second);
   font-size: 1rem ;
-  color:#03e9f4;
+  color:var(--first);
+}
+button{
+  outline: none;
 }
 .listSec span{
   display: flex;
   justify-content: space-evenly;
-  background-color: #2c293b;
+  background-color: var(--second);
   border-radius: 2rem;
   overflow: hidden;
   margin-top: 1rem;
@@ -114,41 +147,77 @@ border: 1px solid #03e9f4;
   transition: 0.25s;
 }
 .listSec button:hover,span a:hover{
-  background-color:#03e9f4 ;
-  color: #2c293b;
+  background-color:var(--first) ;
+  color: var(--second);
 }
 .listSec span:hover{
   border-radius: 0.5rem;
   transform: translateY(-0.3rem);
-  box-shadow: 0 0.5rem 0.5rem -0.3rem #03e9f4;
+  box-shadow: 0 0.5rem 0.5rem -0.3rem var(--first);
 }
-#delivery{
-    text-align: center;
-    background-color: whitesmoke;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-radius: 30px;
-    font-weight: 900;
+img {
+  opacity: 0.75;
 }
-#delivery img{
-    width: 100px;
+
+img:hover {
+  opacity: 1;
+  cursor: pointer;
 }
-#flash{
-    animation: blinker 1s linear infinite;
+footer {
+  font-family: 'Yellowtail', cursive;
+  background-color: var(--third);
+  color: var(--first);
+  clear: both;
+  font-size: 1.3rem;
 }
-@keyframes blinker {
-    40% {
-      opacity: 0;
-    }
-  }
-  footer {
-    font-family: 'Yellowtail', cursive;
-    background-color: #2c293b;
-    color: #03e9f4;
-    clear: both;
-  }
-  footer p {
-    text-align: center;
-    padding: 20px;
-  } 
+
+footer p {
+  text-align: center;
+  /* padding: 1rem; */
+  margin: 2rem 14rem 0 0 ;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer>section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 5rem 1rem;
+}
+
+footer section section {
+  display: block;
+
+  padding: 1.2rem 0 0;
+  text-align: left;
+}
+
+
+footer ul {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+  margin: 0 ;
+}
+
+footer li {
+  padding: .5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  padding: 0 0 1rem .5rem;
+  margin: 0 ;
+}

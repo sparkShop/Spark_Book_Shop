@@ -22,7 +22,7 @@ function Book_data(name, imgPath, image, description, price, link) {
 const front_end_books = [
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/HTML5CSS3.JPG',
     '',
     '',
@@ -30,7 +30,7 @@ const front_end_books = [
   ),
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/how-to-code-in-html.png',
     '',
     '',
@@ -38,7 +38,7 @@ const front_end_books = [
   ),
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/Bootstrap-A-SitePoint-Anthology-1.png',
     '',
     '',
@@ -46,7 +46,7 @@ const front_end_books = [
   ),
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/javascript.jpg',
     '',
     '',
@@ -54,7 +54,7 @@ const front_end_books = [
   ),
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/JQuery.png',
     '',
     '',
@@ -67,7 +67,7 @@ const front_end_books = [
 const back_end_books = [
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/pythonhardway.jpg',
     '',
     '',
@@ -75,7 +75,7 @@ const back_end_books = [
   ),
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/pythonprogramming.jpg',
     '',
     '',
@@ -83,7 +83,7 @@ const back_end_books = [
   ),
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/Java.jpg',
     '',
     '',
@@ -91,7 +91,7 @@ const back_end_books = [
   ),
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/php.jpg',
     '',
     '',
@@ -99,7 +99,7 @@ const back_end_books = [
   ),
   new Book_data(
     'front_end_books',
-    'https://www.google.com',
+    '#',
     '../images/Net.jpg',
     '',
     '',
@@ -135,10 +135,9 @@ for (let i = 0; i < 5; i++) {
   book_li.appendChild(book_span);
   front_end_ul.appendChild(book_li);
   // Define element properties
-  book_a.href = front_end_books[i].imgPath;
   book_a.target = '_blank';
   book_img.src = front_end_books[i].image;
-  span_button1.textContent = 'Description';
+  span_button1.textContent = 'Read';
   span_button2.textContent = 'Download';
   span_a1.href = front_end_books[i].imgPath;
   span_a1.target = '_blank';
@@ -168,11 +167,9 @@ for (let i = 0; i < 5; i++) {
   back_end_ul.appendChild(book_li);
   // Define element properties
   book_img.src = back_end_books[i].image;
-  book_a.href = back_end_books[i].imgPath;
   book_a.target = '_blank';
-  span_button1.textContent = 'Description';
+  span_button1.textContent = 'Read';
   span_button2.textContent = 'Download';
-  span_button2.id = 'ahmed';
   span_a1.href = back_end_books[i].imgPath;
   span_a1.target = '_blank';
   span_a2.href = back_end_books[i].link;

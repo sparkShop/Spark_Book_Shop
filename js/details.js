@@ -1,7 +1,6 @@
 'use strict';
 
 // Get element by id
-const title_ele=document.getElementById('title');
 const author_ele=document.getElementById('author');
 const description_ele=document.getElementById('description');
 const img_ele = document.getElementById('img_book');
@@ -17,23 +16,22 @@ const cart_span=document.getElementById('cart_span');
 // Book index
 const book_index=localStorage.getItem('book_index');
 
-// change add_cart_bt button id 
+// change add_cart_bt button id
 const add_cart_bt=document.getElementById('add_cart_bt');
-add_cart_bt.id="b"+book_index;
+add_cart_bt.id='b'+book_index;
 
-    // get selected book data from database
-    const name =paid_Book[book_index].name;
-    const price =paid_Book[book_index].price;
-    const author =paid_Book[book_index].author;
-    const description =paid_Book[book_index].description;
-    const image =paid_Book[book_index].image;
+// get selected book data from database
+const name =paid_Book[book_index].name;
+const price =paid_Book[book_index].price;
+const author =paid_Book[book_index].author;
+const description =paid_Book[book_index].description;
+const image =paid_Book[book_index].image;
 
-    // show the book data in the elements
-    img_ele.src = image;
-    title_ele.textContent = name;
-    description_ele.textContent = description;
-    author_ele.textContent = author;
-    price_text.textContent = price +' $';
+// show the book data in the elements
+img_ele.src = image;
+description_ele.textContent = description;
+author_ele.textContent = author;
+price_text.textContent = price +' $';
 
 
 
@@ -52,7 +50,7 @@ let tag_index_4 = 0;
 let related_book_array =[];
 
 
-// get tags elements by id 
+// get tags elements by id
 
 const tag1_ele = document.getElementById('tag1_ele');
 const tag2_ele = document.getElementById('tag2_ele');
@@ -64,119 +62,107 @@ let tags_counter = 0;
 
 for (let i=0;i<tags.length;i++){
 
-    if (tags[i].includes(book_index*1)){
-        related_book_array = related_book_array.concat(tags[i]);
-        switch(''){
-            case tag_1:
-                tag_index_1 = i;
-                tag_1=tags_name[i];
-                tags_counter++;
-                break;
-            case tag_2:
-                tag_index_2 = i;
-                tag_2=tags_name[i];
-                tags_counter++;
-                break;
-            case tag_3:
-                tag_index_3 = i;
-                tag_3=tags_name[i];
-                tags_counter++;
-                break;
-            case tag_4:
-                tag_index_4 = i;
-                tag_4=tags_name[i];
-                tags_counter++;
-                break;
-        }    
+  if (tags[i].includes(book_index*1)){
+    related_book_array = related_book_array.concat(tags[i]);
+    switch(''){
+    case tag_1:
+      tag_index_1 = i;
+      tag_1=tags_name[i];
+      tags_counter++;
+      break;
+    case tag_2:
+      tag_index_2 = i;
+      tag_2=tags_name[i];
+      tags_counter++;
+      break;
+    case tag_3:
+      tag_index_3 = i;
+      tag_3=tags_name[i];
+      tags_counter++;
+      break;
+    case tag_4:
+      tag_index_4 = i;
+      tag_4=tags_name[i];
+      tags_counter++;
+      break;
     }
+  }
 
-    if(tags_counter==4){
-        break;
-    }
+  if(tags_counter==4){
+    break;
+  }
 }
 
 
 if(tag_1 !=''){
-    tag1_ele.textContent=tag_1;
+  tag1_ele.textContent=tag_1;
 }else{
-    tag1_ele.style.display="none";
+  tag1_ele.style.display='none';
 }
 
 if(tag_2 !=''){
-    tag2_ele.textContent=tag_2;
+  tag2_ele.textContent=tag_2;
 }else{
-    tag2_ele.style.display="none";
+  tag2_ele.style.display='none';
 }
 
 if(tag_3 !=''){
-    tag3_ele.textContent=tag_3;
+  tag3_ele.textContent=tag_3;
 }else{
-    tag3_ele.style.display="none";
+  tag3_ele.style.display='none';
 }
 
 if(tag_4 !=''){
-    tag4_ele.textContent=tag_4;
+  tag4_ele.textContent=tag_4;
 }else{
-    tag4_ele.style.display="none";
+  tag4_ele.style.display='none';
 }
 
 
 // ---------------- Related Book --------------------------------
 
 // ----------------Get Related Book Index -----------------------
-let book1_index =0;
-let book2_index =0;
-let book3_index =0;
-let book4_index =0;
-
 // Book 1
-book1_index = getRandomArbitrary(0,(related_book_array.length-1))
-book1_index = related_book_array[book1_index];
-
-while(book1_index==book_index){
-    book1_index = getRandomArbitrary(0,(related_book_array.length-1))
-    book1_index = related_book_array[book1_index];
+let book1_index =related_book_array[0];
+if(book_index==related_book_array[0]){
+    book1_index=related_book_array[4];
 }
-
 // Book 2
-while(book2_index==book_index ||book2_index==book1_index || book2_index ==0){
-    book2_index = getRandomArbitrary(0,(related_book_array.length-1))
-    book2_index = related_book_array[book2_index];
+let book2_index =related_book_array[1];
+if(book_index==related_book_array[1]){
+    book1_index=related_book_array[4];
 }
-
 // Book 3
-while(book3_index==book_index || book3_index==book1_index || book3_index==book2_index || book3_index ==0){
-    book3_index = getRandomArbitrary(0,(related_book_array.length-1))
-    book3_index = related_book_array[book3_index];
+let book3_index =related_book_array[2];
+if(book_index==related_book_array[2]){
+    book1_index=related_book_array[4];
 }
-
 // Book 4
-while(book4_index==book_index || book4_index==book1_index || book4_index==book2_index || book4_index==book3_index || book4_index ==0){
-    book4_index = getRandomArbitrary(0,(related_book_array.length-1))
-    book4_index = related_book_array[book4_index];
+let book4_index =related_book_array[3];
+if(book_index==related_book_array[3]){
+    book1_index=related_book_array[4];
 }
-
 // ---------------- Book Tags Listener --------------------------------
 
 
 tag1_ele.addEventListener('click',function(){
-    localStorage.setItem('tag_index' , tag_index_1);
-    document.location.href = '../tags.html';
+  localStorage.setItem('tag_index' , tag_index_1);
+  document.location.href = '../tags.html';
 });
 
 tag2_ele.addEventListener('click',function(){
-    localStorage.setItem('tag_index' , tag_index_2);
-    document.location.href = '../tags.html';
+  localStorage.setItem('tag_index' , tag_index_2);
+  document.location.href = '../tags.html';
 });
 
 tag3_ele.addEventListener('click',function(){
-    localStorage.setItem('tag_index' , tag_index_3);
-    document.location.href = '../tags.html';
+  localStorage.setItem('tag_index' , tag_index_3);
+  document.location.href = '../tags.html';
 });
 
 tag4_ele.addEventListener('click',function(){
-    localStorage.setItem('tag_index' , tag_index_4);
-    document.location.href = '../tags.html';
+  localStorage.setItem('tag_index' , tag_index_4);
+  document.location.href = '../tags.html';
 });
 
 
@@ -189,45 +175,42 @@ const main_ul =document.getElementById('related_book_ul');
 
 
 function create_book_element(i){
-    
-const book_li = document.createElement('li');
-const book_img = document.createElement('img');
-const book_span = document.createElement('span');
-const a_1 = document.createElement('a');
-const a_2 = document.createElement('a');
-const button1 = document.createElement('button');
-const button2 = document.createElement('button'); 
-const head_1 = document.createElement('h3');
-const head_2 = document.createElement('h3');
 
-book_img.className="related_img";
+  const book_li = document.createElement('li');
+  const book_img = document.createElement('img');
+  const book_span = document.createElement('span');
+  const a_1 = document.createElement('a');
+  const a_2 = document.createElement('a');
+  const button1 = document.createElement('button');
+  const button2 = document.createElement('button');
+  const head_2 = document.createElement('h3');
 
-// Arrange the elements
-main_ul.appendChild(book_li);
-book_li.appendChild(book_img);
-book_li.appendChild(book_span);
-book_li.appendChild(head_1);
-book_li.appendChild(head_2);
+  book_img.className='related_img';
 
-book_span.appendChild(a_1);
-book_span.appendChild(a_2);
-a_1.appendChild(button1);
-a_2.appendChild(button2);
+  // Arrange the elements
+  main_ul.appendChild(book_li);
+  book_li.appendChild(book_img);
+  book_li.appendChild(book_span);
+  book_li.appendChild(head_2);
 
-// Define element properties
-book_img.src = paid_Book[i].image;
-head_1.textContent=paid_Book[i].name;
-head_2.textContent=paid_Book[i].price + ' JD';
-button1.textContent='Description';
-button2.textContent='Add to Cart';
+  book_span.appendChild(a_1);
+  book_span.appendChild(a_2);
+  a_1.appendChild(button1);
+  a_2.appendChild(button2);
 
-button1.addEventListener('click',function(){
+  // Define element properties
+  book_img.src = paid_Book[i].image;
+  head_2.textContent=paid_Book[i].price + ' JD';
+  button1.textContent='Description';
+  button2.textContent='Add to Cart';
+
+  button1.addEventListener('click',function(){
     localStorage.setItem('book_index' , i);
     //document.location.href = '../tags.html';
     location.reload();
-});
+  });
 
-button2.id="b"+i;
+  button2.id='b'+i;
 
 }
 
@@ -240,5 +223,5 @@ create_book_element(book4_index);
 
 
 function getRandomArbitrary(min, max) {
-    return Math.round( Math.random() * (max - min) + min );
+  return Math.round( Math.random() * (max - min) + min );
 }
