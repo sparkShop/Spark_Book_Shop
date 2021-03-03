@@ -149,7 +149,7 @@ const imageArr = [
   './images/Eloquent JavaScript.jpg',
   './images/Head First JavaScript Programming.jpg',
   './images/Learn JavaScript Quickly.jpg',
-  './images/Javascript for Beginners.jpg',
+  './images/JJavascript for Beginners.jpg',
   './images/HTML5 for Masterminds.jpg',
   './images/HTML5 and CSS3 All-in-One For Dummies.jpg',
   './images/HTML5 Pocket Reference.jpg',

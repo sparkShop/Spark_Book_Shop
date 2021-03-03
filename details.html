@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/detailsStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2><a href='./index.html'>Spark Book Shop</a></h2>
+        <nav>
+            <ul>
+                <li><a href='./index.html'>HOME</a></li>
+                <li><a href='./shop.html'>SHOP</a></li>
+                <li><a href='./cart.html'>CART (<span id="cartNo"></span>)</a></li>
+                <li><a href='#'>ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main id="addToCartButtons">
+        <div id="div1">
+            <img id="img_book" src="https://placehold.it/400x500/ddd/" alt="">
+            <div id="div2">
+                <h1 id="title">Learning Web Design: A Beginner\'s Guide to HTML</h1>
+                <h2 id="author">Jennifer Robbins</h2>
+                <h3 id="price_text">35$</h3>
+                <p id="description"></p> 
+                <span id = "book_tags">
+                    <button id="tag1_ele">tag1</button>
+                    <button id="tag2_ele">tag2</button>
+                    <button id="tag3_ele">tag3</button>
+                    <button id="tag4_ele">tag4</button>
+                </span>
+              
+                <span id = "cart_span">
+                    <button id = "add_cart_bt">Add To Cart</button>
+                </span>
+            </div>
+        </div>
+
+        <ul id="related_book_ul" class="listSec"></ul>
+    </main>
+
+    <footer>
+        <script src="./js/database.js"></script>
+        <script src='./js/books.js'></script>
+        <script src='./js/shop.js'></script>
+        <script src="./js/details.js"></script>
+    </footer>
+</body>
+</html>
