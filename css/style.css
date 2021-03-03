@@ -1,34 +1,48 @@
 /*--------------------------------------------------generalRules--------------------------------------------------*/
-*{
-  box-sizing:border-box;
+
+* {
+  box-sizing: border-box;
 }
-html{
+
+html {
   font: normal 16px 'Playfair Display', serif;
   background-color: var(--second);
 }
-a{
+
+a {
   text-decoration: none;
   opacity: 0.75;
   color: var(--first);
 }
-a:hover{
+
+a:hover {
   opacity: 1;
-} 
+}
+
 :root {
   --first: #f5c611;
   --second: #121212;
+  --third: #000;
+  --fourth: #ccc;
+  --fifth: #ffd700;
+  --sixth: #fff;
 }
-span a{
+
+span a {
   opacity: 1;
 }
+
 /*--------------------------------------------------headerStyle---------------------------------------------------*/
-header a,footer a{
+
+header a, footer a {
   opacity: 1;
 }
-header a:hover,footer a:hover{
+
+header a:hover, footer a:hover {
   opacity: 0.75;
 }
-header{
+
+header {
   font-family: 'Yellowtail', cursive;
   color: var(--first);
   position: absolute;
@@ -41,61 +55,74 @@ header{
   opacity: 0;
   z-index: 1;
 }
+
 @keyframes fade {
   100% {
     opacity: 1;
   }
 }
-header h2{
+
+header h2 {
   font-size: 2rem;
 }
-header nav ul{
+
+header nav ul {
   font-size: 1.2rem;
   display: flex;
   margin-right: -1rem;
 }
-header nav ul li{
+
+header nav ul li {
   margin: 0 1rem;
 }
+
 section {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   align-items: center;
   padding: 3rem 2.5rem;
 }
-button:hover{
-cursor: pointer;
+
+button:hover {
+  cursor: pointer;
 }
+
 /*------------------------------------------------secSectionStyle-------------------------------------------------*/
-header a{
+
+header a {
   color: var(--first);
 }
+
 .sec {
   font-family: 'Yellowtail', cursive;
-  color:var(--first);
-  position:relative;
+  color: var(--first);
+  position: relative;
   justify-content: center;
   text-align: center;
   min-height: 100vh;
 }
-.sec .bg-img{
+
+.sec .bg-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: center/cover #80a3db url(./../images/section.jpg);
+  background: center/cover var(--first) url(./../images/section.jpg);
   z-index: -1;
 }
-.sec h1{
+
+.sec h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
-.sec h3{
+
+.sec h3 {
   font-size: 2rem;
   margin-bottom: 1.6rem;
 }
-a.button{
+
+a.button {
   border-radius: .2rem;
   font-weight: bold;
   font-size: 1.2rem;
@@ -103,48 +130,56 @@ a.button{
   opacity: 1;
   transition: 0.25s;
 }
-.sec button{
+
+.sec button {
   padding: 1rem 1.3rem;
   border-style: none;
   background-color: var(--second);
-  font-size: 1.3rem ;
-  color:var(--first);
+  font-size: 1.3rem;
+  color: var(--first);
   letter-spacing: 1px;
   border-radius: 2rem;
   font-family: 'Yellowtail', cursive;
   transition: 0.25s;
 }
-.sec button:hover{
-  background-color:var(--second) ;
-  color: #ccc;
+
+.sec button:hover {
+  background-color: var(--second);
+  color: var(--fourth);
   border-radius: 0.5rem;
   transform: translateY(-0.3rem);
-  box-shadow: 0 0.5rem 0.5rem -0.3rem #ccc;
+  box-shadow: 0 0.5rem 0.5rem -0.3rem var(--fourth);
 }
-.sec-content{
+
+.sec-content {
   opacity: 0;
-  margin-top:6.25rem ;
+  margin-top: 6.25rem;
   animation: 1s verticalFade 1s forwards;
 }
+
 @keyframes verticalFade {
-  100%{
+  100% {
     opacity: 1;
-    margin:0;
+    margin: 0;
   }
 }
+
 /* unorderedListStyle */
-#ulList{
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+
+#ulList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-#ulList ul{
+
+#ulList ul {
   justify-content: space-between;
   height: auto;
 }
-#ulList li{
-  box-shadow: 0 0 1rem #000;
+
+#ulList li {
+  box-shadow: 0 0 1rem var(--third);
   min-height: 10rem;
   max-height: 25rem;
   padding: 1.2rem;
@@ -154,74 +189,86 @@ justify-content: center;
   line-height: 2rem;
   overflow: hidden;
 }
-#ulList li.small{
+
+#ulList li.small {
   flex-basis: 27%;
   background: center/cover url(../images/mitchell-luo-k3fFyMq3mAQ-unsplash.jpg);
-  color: #fff;
+  color: var(--sixth);
   text-align: center;
-  min-height:2rem;
+  min-height: 2rem;
 }
-#ulList li.large{
+
+#ulList li.large {
   flex-basis: 68%;
   background: center/cover no-repeat url(../images/mitchell-luo-k3fFyMq3mAQ-unsplash.jpg);
-  color: #fff;
+  color: var(--sixth);
 }
+
 /*-------------------------------------------------bookListStyle--------------------------------------------------*/
-#ulList h3{
+
+#ulList h3 {
   font: bold 1.2rem 'Playfair Display', serif;
   text-align: center;
   margin-bottom: 0.5rem;
 }
-#ulList p{
+
+#ulList p {
   text-align: justify;
   z-index: 1;
 }
-.listSec  {
+
+.listSec {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 0;
 }
-.listSec ul{
+
+.listSec ul {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
-.listSec ul li img{
+
+.listSec ul li img {
   /* width: 100%; */
-  max-width:14rem;
-  min-height: 22rem ;
+  max-width: 14rem;
+  min-height: 22rem;
   border-radius: 2rem;
   /* box-shadow: 0 0 1rem #aaa; */
-  transition:  0.25s;
+  transition: 0.25s;
 }
-.listSec h2{
-  color: #ffd700;
-  font: bold 2rem 'Playfair Display', serif;
-  padding:0 0 2rem 1.5rem;
 
+.listSec h2 {
+  color: var(--fifth);
+  font: bold 2rem 'Playfair Display', serif;
+  padding: 0 0 2rem 1.5rem;
 }
-.listSec li{
+
+.listSec li {
   text-align: center;
   min-width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.listSec img:hover{
-border:none;
-box-shadow: 0 0.5rem 2rem -0.3rem var(--first);
-transform: translateY(-0.3rem);
-border: 1px solid var(--first);
+
+.listSec img:hover {
+  border: none;
+  box-shadow: 0 0.5rem 2rem -0.3rem var(--first);
+  transform: translateY(-0.3rem);
+  border: 1px solid var(--first);
 }
-.listSec button{
+
+.listSec button {
   padding: .8rem;
   margin: 1rem 0;
   border-style: none;
   background-color: var(--second);
-  font-size: 1rem ;
-  color:var(--first);
+  font-size: 1rem;
+  color: var(--first);
 }
-.listSec span{
+
+.listSec span {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--second);
@@ -232,56 +279,98 @@ border: 1px solid var(--first);
   align-items: center;
   transition: 0.25s;
 }
-.listSec button:hover,span a:hover{
-  background-color:var(--first) ;
+
+.listSec button:hover, span a:hover {
+  background-color: var(--first);
   color: var(--second);
 }
 
-.listSec span:hover{
+.listSec span:hover {
   border-radius: 0.5rem;
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 0.5rem -0.3rem var(--first);
 }
-.para{
+
+.para {
   margin-bottom: 4rem;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffd700;
+  color: var(--fifth);
 }
+
 /* .listSec button:hover{
   border:#ccc 1px solid;
   box-shadow: 0 0 .5rem .2rem #ccc;
   transform: translateY(-0.3rem);
 } */
+
 /* background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.0666667) 4%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, rgba(0,0,0,0.0666667) 96%, rgba(0,0,0,0.2) 100%);for cards */
+
 /* box-shadow: 0px 0px 15.4533px rgba(0, 0, 0, 0.1);for plate
 box-shadow: 0px 12px 25px 0px rgba(0, 199, 157, 0.35);for button */
+
 /* button ::selection{
   border-color: var(--second);
 } */
+
 footer {
   font-family: 'Yellowtail', cursive;
-  background-color: #000;
+  background-color: var(--third);
   color: var(--first);
   clear: both;
+  font-size: 1.3rem;
 }
+
 footer p {
   text-align: center;
-  padding: 20px;
-} 
-footer a{
+  padding: 1rem;
+}
+
+footer a {
   text-decoration: none;
 }
-footer li{
+
+footer li {
   list-style: none;
 }
-footer>section{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
 
+footer>section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0;
 }
+
+footer section section {
+  display: block;
+  width: 100%;
+  padding: 1.2rem 0 0;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer li {
+  padding: .5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  padding: 0 0 1rem .5rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
 /* main section{
     background-image: url(./../images/section.jpg);
     width: 100%;*/
