@@ -206,8 +206,10 @@ const Cart = function (allbooksAdded) {
   }
 };
 //create array that has all added books
+
 Cart.prototype.addBooksToCart = function (bookadded) {
-  this.allbooksAdded.push(new BookAdded(bookadded));
+
+console.log(new BookAdded(bookadded));  this.allbooksAdded.push(new BookAdded(bookadded));
 };
 // add this array to local storage after doing the conversion using JSON stringify method
 Cart.prototype.saveBooksLocalStorage = function () {
