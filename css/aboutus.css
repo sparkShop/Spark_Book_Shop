@@ -182,7 +182,7 @@ footer h2 {
   flex: 0.5;
   margin: 0.8rem;
   position: relative;
-  transition: flex 1s ease-in;
+  transition: flex 1s ease-out;
   padding: 0 auto;
 }
 
@@ -201,13 +201,17 @@ footer h2 {
   color: var(--fourth);
   align-self: flex-start;
   margin-top: 2rem;
-  transition: opacity 0.3s ease-in 0.4s;
 }
 
 .active {
   flex: 5;
 }
-
+main>h1{
+  color: var(--first);
+  font: 2rem bold ;
+  text-align: center;
+  margin: 1.5rem 0 0;
+}
 .active h2,.active p, .active img {
   opacity: 1;
   overflow:hidden;
