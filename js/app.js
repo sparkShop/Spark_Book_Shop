@@ -23,7 +23,7 @@ const front_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/1eWq2GoO3q9dO5VbuWGERPmtQa_YmeJX8/view?usp=sharing',
-    './images/HTML5CSS3.JPG',
+    'images/HTML5CSS3.JPG',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=1eWq2GoO3q9dO5VbuWGERPmtQa_YmeJX8&export=download'
@@ -31,7 +31,7 @@ const front_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/1BRasQMatvYcKbueMF_-k5vBKftuNdjZT/view?usp=sharing',
-    './images/how-to-code-in-html.png',
+    'images/how-to-code-in-html.png',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=1BRasQMatvYcKbueMF_-k5vBKftuNdjZT&export=download'
@@ -39,7 +39,7 @@ const front_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/1OelQxg66AYYOnyk9RiiP9bCq5sSUxQAZ/view?usp=sharing',
-    './images/Bootstrap-A-SitePoint-Anthology-1.png',
+    'images/Bootstrap-A-SitePoint-Anthology-1.png',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=1OelQxg66AYYOnyk9RiiP9bCq5sSUxQAZ&export=download'
@@ -47,7 +47,7 @@ const front_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/1HRAz-WXqqlSqoXsh-qfGiDSjpraqtmFw/view?usp=sharing',
-    './images/javascript.jpg',
+    'images/javascript.jpg',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=1HRAz-WXqqlSqoXsh-qfGiDSjpraqtmFw&export=download'
@@ -55,7 +55,7 @@ const front_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/1MbtyD3_AU9hFj55WAsQMZLhiMjKqiBDi/view?usp=sharing',
-    './images/JQuery.png',
+    'images/JQuery.png',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=1MbtyD3_AU9hFj55WAsQMZLhiMjKqiBDi&export=download'
