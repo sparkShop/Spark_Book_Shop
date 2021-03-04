@@ -147,7 +147,7 @@ if(book_index==related_book_array[3]){
 
 tag1_ele.addEventListener('click',function(){
   localStorage.setItem('tag_index' , tag_index_1);
-  document.location.href = '../tags.html';
+  document.location.href = './tags.html';
 });
 
 tag2_ele.addEventListener('click',function(){
@@ -162,7 +162,7 @@ tag3_ele.addEventListener('click',function(){
 
 tag4_ele.addEventListener('click',function(){
   localStorage.setItem('tag_index' , tag_index_4);
-  document.location.href = '../tags.html';
+  document.location.href = './tags.html';
 });
 
 

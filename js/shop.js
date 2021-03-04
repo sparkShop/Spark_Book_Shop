@@ -93,7 +93,7 @@ function clickHandler2(event) {
   for (let i = 0; i < 25; i++) {
     if (event.target.id === uniqueIDArr2[i]) {
       localStorage.setItem('book_index' , i);
-      document.location.href = '../details.html';
+      document.location.href = './details.html';
     }
   }
 
