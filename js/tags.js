@@ -45,7 +45,7 @@ button2.textContent='Add to Cart';
 
 button1.addEventListener('click',function(){
     localStorage.setItem('book_index' , i);
-    document.location.href = '../details.html';
+    document.location.href = './details.html';
 })
 
 button2.id="b"+i;

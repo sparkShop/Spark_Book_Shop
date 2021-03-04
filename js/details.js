@@ -152,12 +152,12 @@ tag1_ele.addEventListener('click',function(){
 
 tag2_ele.addEventListener('click',function(){
   localStorage.setItem('tag_index' , tag_index_2);
-  document.location.href = '../tags.html';
+  document.location.href = './tags.html';
 });
 
 tag3_ele.addEventListener('click',function(){
   localStorage.setItem('tag_index' , tag_index_3);
-  document.location.href = '../tags.html';
+  document.location.href = './tags.html';
 });
 
 tag4_ele.addEventListener('click',function(){
@@ -206,7 +206,7 @@ function create_book_element(i){
 
   button1.addEventListener('click',function(){
     localStorage.setItem('book_index' , i);
-    //document.location.href = '../tags.html';
+    //document.location.href = './tags.html';
     location.reload();
   });
 
