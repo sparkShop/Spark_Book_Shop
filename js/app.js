@@ -68,7 +68,7 @@ const back_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/1KDncaqzdZAW0ZSUDghhjmlvlnvsZLT7j/view?usp=sharing',
-    './../images/pythonhardway.jpg',
+    './images/pythonhardway.jpg',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=1KDncaqzdZAW0ZSUDghhjmlvlnvsZLT7j&export=download'
@@ -76,7 +76,7 @@ const back_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/1dTqJPLWJB-ZlhvexYAnoICvwWjKEgwTS/view?usp=sharing',
-    './../images/pythonprogramming.jpg',
+    './images/pythonprogramming.jpg',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=1dTqJPLWJB-ZlhvexYAnoICvwWjKEgwTS&export=download'
@@ -84,7 +84,7 @@ const back_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/1coXi6bM6Mga6zHgVfntKF1zK2vihl-Ov/view?usp=sharing',
-    './../images/Java.jpg',
+    './images/Java.jpg',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=1coXi6bM6Mga6zHgVfntKF1zK2vihl-Ov&export=download'
@@ -92,7 +92,7 @@ const back_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/16rlzVDFOu3h8hXC6LAHhIT1zdu3vYVBl/view?usp=sharing',
-    './../images/php.jpg',
+    './images/php.jpg',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=16rlzVDFOu3h8hXC6LAHhIT1zdu3vYVBl&export=download'
@@ -100,7 +100,7 @@ const back_end_books = [
   new Book_data(
     'front_end_books',
     'https://drive.google.com/file/d/13V7zBBAqPtG8R7IAjV-yJFGnIM35sv5x/view?usp=sharing',
-    './../images/Net.jpg',
+    './images/Net.jpg',
     '',
     '',
     'https://drive.google.com/u/0/uc?id=13V7zBBAqPtG8R7IAjV-yJFGnIM35sv5x&export=download'
