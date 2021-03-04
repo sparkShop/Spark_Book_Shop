@@ -22,43 +22,43 @@ function Book_data(name, imgPath, image, description, price, link) {
 const front_end_books = [
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/1eWq2GoO3q9dO5VbuWGERPmtQa_YmeJX8/view?usp=sharing',
     '../images/HTML5CSS3.JPG',
     '',
     '',
-    'http://download1594.mediafire.com/9aivyci7egog/g98232patobhbk8/HTML5+CSS3+For+The+Real+World+2nd+Edition.pdf'
+    'https://drive.google.com/u/0/uc?id=1eWq2GoO3q9dO5VbuWGERPmtQa_YmeJX8&export=download'
   ),
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/1BRasQMatvYcKbueMF_-k5vBKftuNdjZT/view?usp=sharing',
     '../images/how-to-code-in-html.png',
     '',
     '',
-    'http://download1647.mediafire.com/jvtaqfpzxsag/s0rp9wca36i5om7/CodeHTML%26CSS.pdf'
+    'https://drive.google.com/u/0/uc?id=1BRasQMatvYcKbueMF_-k5vBKftuNdjZT&export=download'
   ),
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/1OelQxg66AYYOnyk9RiiP9bCq5sSUxQAZ/view?usp=sharing',
     '../images/Bootstrap-A-SitePoint-Anthology-1.png',
     '',
     '',
-    'http://download943.mediafire.com/lqyvultvcmsg/ogt9teytxflwxcp/bootstrap-ant-1_compress.pdf'
+    'https://drive.google.com/u/0/uc?id=1OelQxg66AYYOnyk9RiiP9bCq5sSUxQAZ&export=download'
   ),
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/1HRAz-WXqqlSqoXsh-qfGiDSjpraqtmFw/view?usp=sharing',
     '../images/javascript.jpg',
     '',
     '',
-    'http://download1587.mediafire.com/8896j3lffqkg/p6ryrl8xrtn5w31/Learning+Three+Js+The+Javascri%27%2B%27pt+3d+Library+For+Web+Gl.pdf'
+    'https://drive.google.com/u/0/uc?id=1HRAz-WXqqlSqoXsh-qfGiDSjpraqtmFw&export=download'
   ),
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/1MbtyD3_AU9hFj55WAsQMZLhiMjKqiBDi/view?usp=sharing',
     '../images/JQuery.png',
     '',
     '',
-    'http://download1509.mediafire.com/ux36ojsvwtdg/wxr3vuoizfscw1h/Dominando+JavaScript+com+jQuery+Book+of+2012+Year.pdf'
+    'https://drive.google.com/u/0/uc?id=1MbtyD3_AU9hFj55WAsQMZLhiMjKqiBDi&export=download'
   ),
   new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf'),
   new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf'),
@@ -67,43 +67,43 @@ const front_end_books = [
 const back_end_books = [
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/1KDncaqzdZAW0ZSUDghhjmlvlnvsZLT7j/view?usp=sharing',
     '../images/pythonhardway.jpg',
     '',
     '',
-    'https://download1503.mediafire.com/3ot725cs88rg/fxlxksg556m6irf/Learn+Python+The+Hard+Way+3rd+Edition.pdf'
+    'https://drive.google.com/u/0/uc?id=1KDncaqzdZAW0ZSUDghhjmlvlnvsZLT7j&export=download'
   ),
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/1dTqJPLWJB-ZlhvexYAnoICvwWjKEgwTS/view?usp=sharing',
     '../images/pythonprogramming.jpg',
     '',
     '',
-    'https://download1503.mediafire.com/yvn5g90ojvpg/wmwg2yers1t894n/Python+Programming.++Python+Programming+for+Beginners%2C+Python+Programming+for+Intermediates+%28+PDFDrive+%29.pdf'
+    'https://drive.google.com/u/0/uc?id=1dTqJPLWJB-ZlhvexYAnoICvwWjKEgwTS&export=download'
   ),
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/1coXi6bM6Mga6zHgVfntKF1zK2vihl-Ov/view?usp=sharing',
     '../images/Java.jpg',
     '',
     '',
-    'https://download1349.mediafire.com/2pkz7defd7ig/omdbdraebmulnmm/Java+for+Absolute+Beginners_+Learn+to+Program+the+Fundamentals+the+Java+9%2B+Way+%28+PDFDrive+%29.pdf'
+    'https://drive.google.com/u/0/uc?id=1coXi6bM6Mga6zHgVfntKF1zK2vihl-Ov&export=download'
   ),
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/16rlzVDFOu3h8hXC6LAHhIT1zdu3vYVBl/view?usp=sharing',
     '../images/php.jpg',
     '',
     '',
-    'https://download1654.mediafire.com/bf6dfnhxxjbg/4qfedd8g40sxk3b/Pro+PHP+and+jQuery%2C+2nd+Edition_+Take+your+dynamic+PHP+7+apps+to+the+next+level+by+adding+a+JavaScript+layer+using+jQuery+%28+PDFDrive+%29.pdf'
+    'https://drive.google.com/u/0/uc?id=16rlzVDFOu3h8hXC6LAHhIT1zdu3vYVBl&export=download'
   ),
   new Book_data(
     'front_end_books',
-    '#',
+    'https://drive.google.com/file/d/13V7zBBAqPtG8R7IAjV-yJFGnIM35sv5x/view?usp=sharing',
     '../images/Net.jpg',
     '',
     '',
-    'https://download1507.mediafire.com/5uf09cw6yyog/ly59rvjqsf262lk/Applied+Cryptography+in+.NET+and+Azure+Key+Vault_+A+Practical+Guide+to+Encryption+in+.NET+and+.NET+Core+%28+PDFDrive+%29.pdf'
+    'https://drive.google.com/u/0/uc?id=13V7zBBAqPtG8R7IAjV-yJFGnIM35sv5x&export=download'
   ),
 
   new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf'),

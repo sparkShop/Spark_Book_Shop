@@ -2,33 +2,75 @@
 <html lang='en'>
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='x-ua-compatible' content='ie=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' href='./css/reset.css'>
-  <link rel='stylesheet' href='./css/cart.css'>
-
-  <link rel='preconnect' href='https://fonts.gstatic.com'>
-  <link href='https://fonts.googleapis.com/css2?family=Asap&display=swap' rel='stylesheet'>
-  <title>Basket</title>
+  <meta charset='UTF-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Cart</title>
+  <link rel='preconnect' href='https://fonts.gstatic.com' />
+  <link href='https://fonts.googleapis.com/css2?family=Playfair+Display&family=Yellowtail&display=swap'
+    rel='stylesheet' />
+  <link rel='stylesheet' href='./css/reset.css' />
+  <link rel='stylesheet' href='./css/cart.css' />
+  <script src='https://kit.fontawesome.com/39e3781d8a.js' crossorigin='anonymous'></script>
 </head>
-<body>
-  <main>
-    <section>
-      <ul>
-        <li>Book image</li>
-        <li>Book name</li>
-        <li>Book price</li>
-        <li>Book rate</li>
-        <li>Book author</li>
-      </ul>
-      <table id="table-cart">
 
-      </table>
-    </section>
+<body>
+  <header>
+    <h2><a href='./index.html'>Spark Book Shop</a></h2>
+    <nav>
+      <ul>
+        <li><a href='./index.html'>HOME</a></li>
+        <li><a href='./shop.html'>SHOP</a></li>
+        <li><a href='./cart.html'>CART (<span id="cartNo"></span>)</a></li>
+        <li><a href='./aboutus.html'>ABOUT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <ul id="table">
+      <li>IMAGE</li>
+      <li>NAME</li>
+      <li>AUTHOR</li>
+      <li>RATE</li>
+      <li>PRICE</li>
+      <li>REMOVE</li>
+    </ul>    
+      <table id='table-cart'></table>
+    <p id='total-cart'></p>
   </main>
+  <footer>
+  <section>
+    <section>
+      <h2>Popular Websites</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></li>
+        <li><a href="https://www.sololearn.com" target="_blank">SOLOLEARN</a></li>
+        <li><a
+            href="https://www.udemy.com/courses/search/?price=price-free&q=full+stack+web+development&sort=relevance&src=sac"
+            target="_blank">UDEMY</a></li>
+        <li><a href="https://www.freecodecamp.org" target="_blank">FREECODECAMP</a></li>
+        <li><a href="https://upskillcourses.com" target="_blank">UPSKILL</a></li>
+        <li><a href="https://www.edx.org">EDX</a></li>
+      </ul>
+    </section>
+    <p>&copy;Spark_Book_Shop <br> 2021</p>
+    <section>
+
+      <ul>
+        <li><a href="https://github.com/ltuc" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/showcase/ltuc/about/" target="_blank"><i
+              class="fab fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://twitter.com/ltucjo?lang=en" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+        <li><a href="https://www.facebook.com/LTUC.JO/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/ltuc.jo/?hl=en" target="_blank"><i
+              class="fab fa-instagram fa-2x"></i></a></li>
+      </ul>
+    </section>
+  </section>
+  <script src='./js/books.js'></script>
+  <!-- <script src="./js/shop.js"></script> -->
+  <script src='./js/cart.js'></script>
+  </footer>
 </body>
-<script src='./js/books.js'></script>
-<script src='./js/cart.js'></script>
 
 </html>

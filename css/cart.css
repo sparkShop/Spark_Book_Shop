@@ -1,15 +1,237 @@
+* {
+  box-sizing: border-box;
+}
 
-  ul {display: flex;
-    justify-content: space-between; 
-    margin: 50px;  
-    }
-  tr {display: flex;
-justify-content: space-between; 
-margin: 50px;  
+html {
+  font: normal 16px 'Playfair Display', serif;
+  background-color: var(--second);
+  color:var(--first);
 }
-tr img{
-  max-width: 100px;
+
+a {
+  text-decoration: none;
+  opacity: 1;
+  color: var(--first);
 }
-button{
-  outline: none;
+
+button:hover {
+  cursor: pointer;
+}
+
+header a:hover, footer a:hover {
+  opacity: 0.75;
+}
+
+:root {
+  --first: #f5c611;
+  --second: #121212;
+  --third: #000;
+  --fifth: #ffd700;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  font-family: 'Yellowtail', cursive;
+  color: var(--first);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 6.25rem;
+  animation: 1s fade 0.5s forwards;
+  opacity: 0;
+  background-color: var(--third);
+}
+
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+header nav ul {
+  font-size: 1.2rem;
+  display: flex;
+  margin-right: -1rem;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2.5rem;
+}
+main section:first-child{
+  margin-top: 5rem;
+}
+#table {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top:7rem;
+ 
+}
+#table li{
+  background-color: var(--third);
+  padding: 1rem 0;
+  border-radius: 2rem;
+  min-width: 8rem;
+  max-width: 8rem;
+}
+#table-cart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items:center;
+
+  width: 100%;
+  /* padding: 0; */
+}
+#table-cart tr{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem 0;
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  
+}
+#table-cart button{
+  width: 7rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background-color: var(--third);
+  color: var(--first);
+  border: none;
+  transition: 0.25s;
+  font-size: 1.05rem;
+}
+#table-cart button:hover{
+  background-color: var(--first);
+  color: var(--third);
+  cursor: pointer;
+  transform: translateY(-0.3rem);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 0.5rem -0.3rem var(--first);
+}
+#table-cart tr img{
+  width: 5rem;
+  border-radius: 1rem;
+  min-height:8rem;
+}
+#total-cart{
+  display: flex;
+ margin-bottom: 10rem;
+ margin: 0 auto 10rem;
+ justify-content: flex-end;
+ /* margin-right: 23.5rem; */
+ border-top: #555 0.5px solid;
+ height: 2rem;
+ align-items: center;
+ width: 53%;
+}
+
+#table-cart tr td{
+/* margin-right: 11rem; */
+background-color: var(--third);
+border-radius: 1rem;
+padding: 1rem;
+min-height: 3rem;
+min-width: 8rem;
+max-width: 8rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#table-cart tr td:nth-child(1){
+ margin-top: 1rem;
+ background-color: var(--second);
+}
+#table-cart tr td:nth-child(6){
+  background-color: var(--second);
+ }
+ #table-cart tr td:nth-child(5){
+   padding: 0;
+ }
+
+footer {
+  
+  font-family: 'Yellowtail', cursive;
+  background-color: var(--third);
+  color: var(--first);
+  clear: both;
+  font-size: 1.3rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  /* padding: 1rem; */
+  margin: 2rem 14rem 0 0 ;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer>section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 5rem 1rem;
+}
+
+footer section section {
+  display: block;
+
+  padding: 1.2rem 0 0;
+  text-align: left;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+  margin: 0 ;
+}
+
+footer li {
+  padding: .5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  padding: 0 0 1rem .5rem;
+  margin: 0 ;
+}
+
+img {
+  opacity: 0.75;
+}
+
+img:hover {
+  opacity: 1;
+  cursor: pointer;
 }

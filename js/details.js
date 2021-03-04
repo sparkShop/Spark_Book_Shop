@@ -130,17 +130,17 @@ if(book_index==related_book_array[0]){
 // Book 2
 let book2_index =related_book_array[1];
 if(book_index==related_book_array[1]){
-    book1_index=related_book_array[4];
+    book2_index=related_book_array[4];
 }
 // Book 3
 let book3_index =related_book_array[2];
 if(book_index==related_book_array[2]){
-    book1_index=related_book_array[4];
+    book3_index=related_book_array[4];
 }
 // Book 4
 let book4_index =related_book_array[3];
 if(book_index==related_book_array[3]){
-    book1_index=related_book_array[4];
+    book4_index=related_book_array[4];
 }
 // ---------------- Book Tags Listener --------------------------------
 

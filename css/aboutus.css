@@ -149,27 +149,27 @@ footer h2 {
 }
 
 #container section:nth-child(1) {
-  background: center/cover no-repeat url(../images/altumcode-7U-67_T_J34-unsplash.jpg);
+  background: center/cover no-repeat url(../images/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg);
 }
 
 #container section:nth-child(2) {
-  background: center/cover no-repeat url(../images/altumcode-dMUt0X3f59Q-unsplash.jpg);
+  background: center/cover no-repeat url(../images/mitch-harris-cPZ21gvclO8-unsplash.jpg);
 }
 
 #container section:nth-child(3) {
-  background: center/cover no-repeat url(../images/altumcode-PuxTq4DwUHE-unsplash.jpg);
+  background: center/cover no-repeat url(../images/joe-woods-4Zaq5xY5M_c-unsplash.jpg);
 }
 
 #container section:nth-child(4) {
-  background: center/cover no-repeat url(../images/altumcode-XMFZqrGyV-Q-unsplash.jpg);
+  background: center/cover no-repeat url(../images/madison-bracaglia-fcWAwPKpkTU-unsplash.jpg);
 }
 
 #container section:nth-child(5) {
-  background: center/cover no-repeat url(../images/walling-JV_R_DNzIWU-unsplash.jpg);
+  background: center/cover no-repeat url(../images/resul-DbwYNr8RPbg-unsplash.jpg);
 }
 
 #container section:nth-child(6) {
-  background: center/cover no-repeat url(../images/goran-ivos-iOykDIkZLQw-unsplash.jpg);
+  background: center/cover no-repeat url(../images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
 }
 
 .inactive {
@@ -188,10 +188,14 @@ footer h2 {
 
 .inactive {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
 }
 
-.inactive h2 {
+.inactive h2,.inactive p, .inactive img {
   font-size: 1.5rem;
   opacity: 0;
   color: var(--fourth);
@@ -204,8 +208,20 @@ footer h2 {
   flex: 5;
 }
 
-.active h2 {
+.active h2,.active p, .active img {
   opacity: 1;
+  overflow:hidden;
+  width: 50%;
+  margin: 0 auto;
+  color: var(--third);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.active img{
+  border-radius: 1.5rem;
+  width: 15rem;
+  max-height: 18rem;
 }
 #container section:hover{
   box-shadow: 0 0.5rem 2rem -0.3rem var(--first);
