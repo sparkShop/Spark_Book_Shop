@@ -70,6 +70,9 @@ function removeHandler(event) {
 }
 updateLocal();
 renderCart();
+if(booksFromLS.length){
+totalCart.textContent=`Total price ( ${total} )`;
+}
 function cartC() {
   let num = document.getElementById('cartNo');
   num.textContent =booksFromLS.length;
