@@ -285,7 +285,7 @@ const imageArr2 = [
   './images/Build Your Own AI Investor.jpg', // 17
   './images/Learn Python Quickly.jpg', // 18
   './images/Head First Design Patternsn.jpg', // 19
-  '/images/Elements of Programming Interviews in Java.jpg', // 20
+  './images/Elements of Programming Interviews in Java.jpg', // 20
   './images/Starting Out with Java.jpg', // 21
   './images/JavaScript and JQuery.jpg', // 22
   './images/A Tour of C++.jpg', // 23
