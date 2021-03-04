@@ -24,42 +24,42 @@ const front_end_books = [
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '--------------********',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf'),
   new Book_data('front_end_books', 5, '', '', '', '/pdf-folder/book1.pdf'),
@@ -70,42 +70,42 @@ const back_end_books = [
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data(
     'front_end_books',
     4,
-    '../images/A Tour of C++.jpg',
+    './images/A Tour of C++.jpg',
     '',
     '',
-    '../book1.pdf'
+    './book1.pdf'
   ),
   new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf'),
   new Book_data('back_end_book', 5, '', '', '', '/pdf-folder/book1.pdf'),
