@@ -64,13 +64,12 @@ function removeHandler(event) {
     totalCart.textContent=`Total price ( ${total} )`;
     if(booksFromLS.length ===0){
       let num = document.getElementById('cartNo');
-      totalCart.textContent=`Total price ( ${total} )`;
+      totalCart.parentNode.removeChild(totalCart);
     }
   }
 }
 updateLocal();
 renderCart();
-totalCart.textContent=`Total price ( ${total} )`;
 function cartC() {
   let num = document.getElementById('cartNo');
   num.textContent =booksFromLS.length;
