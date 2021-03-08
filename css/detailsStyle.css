@@ -144,7 +144,6 @@ button {
   font-size: 1.3rem;
   color: var(--first);
   letter-spacing: 1px;
-  border-radius: 2rem;
   font-family: 'Yellowtail', cursive;
   transition: 0.25s;
 }
@@ -153,8 +152,16 @@ button:hover {
   background-color: var(--first);
   color: var(--second);
   border-radius: 0.5rem;
-  transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 0.5rem -0.3rem var(--first);
+}
+#div2 button{
+  border-radius: 0.5rem;
+  background-color: var(--second);
+  font-size: 1.2rem;
+}
+#div2 button:hover{
+  transform: translateY(-0.3rem);
+background-color: var(--fifth);
 }
 
 .sec-content {
@@ -286,6 +293,9 @@ section {
   align-items: center;
 }
 .listSec img:hover{
+  transition: 0.25s;
+}
+.listSec img:hover{
 border:none;
 box-shadow: 0 0.5rem 2rem -0.3rem var(--first);
 transform: translateY(-0.3rem);
@@ -303,12 +313,23 @@ border: 1px solid var(--first);
   display: flex;
   justify-content: space-evenly;
   background-color: var(--second);
-  border-radius: 2rem;
   overflow: hidden;
   margin-top: 1rem;
   max-height: 2.5rem;
   align-items: center;
   transition: 0.25s;
+  width: 12.6rem;
+  border-radius: 0.5rem;
+}
+.listSec span:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 0.5rem -0.3rem var(--first);
+  border: 1px solid var(--fifth);
+}
+.listSec button:hover,
+span a:hover {
+  background-color: var(--first);
+  color: var(--second);
 }
 /* .listSec button:hover{
   background-color:var(--first) ;

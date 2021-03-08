@@ -70,7 +70,9 @@ header nav ul li {
   --fifth: #ffd700;
   --sixth: #fff;
 }
-
+button{
+  font-family: 'Yellowtail', cursive;
+}
 button:hover {
   cursor: pointer;
 }

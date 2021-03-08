@@ -1,5 +1,3 @@
-/*--------------------------------------------------generalRules--------------------------------------------------*/
-
 * {
   box-sizing: border-box;
 }
@@ -8,7 +6,6 @@ html {
   font: normal 16px 'Playfair Display', serif;
   background-color: var(--second);
 }
-
 a {
   text-decoration: none;
   opacity: 0.75;
@@ -24,23 +21,24 @@ a:hover {
   --second: #121212;
   --third: #000;
   --fourth: #ccc;
-  --fifth: #ffd700;
+  --fifth: #f5c518;
   --sixth: #fff;
 }
-button{
+button {
   outline: none;
+  font-family: 'Yellowtail', cursive;
 }
 span a {
   opacity: 1;
 }
 
-/*--------------------------------------------------headerStyle---------------------------------------------------*/
-
-header a, footer a {
+header a,
+footer a {
   opacity: 1;
 }
 
-header a:hover, footer a:hover {
+header a:hover,
+footer a:hover {
   opacity: 0.75;
 }
 
@@ -92,9 +90,6 @@ button:hover {
   cursor: pointer;
 }
 
-
-/*------------------------------------------------secSectionStyle-------------------------------------------------*/
-
 .sec {
   font-family: 'Yellowtail', cursive;
   color: var(--first);
@@ -125,7 +120,7 @@ button:hover {
 }
 
 a.button {
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
@@ -140,7 +135,7 @@ a.button {
   font-size: 1.3rem;
   color: var(--first);
   letter-spacing: 1px;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   font-family: 'Yellowtail', cursive;
   transition: 0.25s;
 }
@@ -148,7 +143,6 @@ a.button {
 .sec button:hover {
   background-color: var(--second);
   color: var(--fourth);
-  border-radius: 0.5rem;
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 0.5rem -0.3rem var(--fourth);
 }
@@ -202,11 +196,10 @@ a.button {
 
 #ulList li.large {
   flex-basis: 68%;
-  background: center/cover no-repeat url(../images/mitchell-luo-k3fFyMq3mAQ-unsplash.jpg);
+  background: center/cover no-repeat
+    url(../images/mitchell-luo-k3fFyMq3mAQ-unsplash.jpg);
   color: var(--sixth);
 }
-
-/*-------------------------------------------------bookListStyle--------------------------------------------------*/
 
 #ulList h3 {
   font: bold 1.2rem 'Playfair Display', serif;
@@ -263,11 +256,11 @@ a.button {
 }
 
 .listSec button {
-  padding: .8rem;
+  padding: 0.8rem;
   margin: 1rem 0;
   border-style: none;
   background-color: var(--second);
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: var(--first);
 }
 
@@ -275,7 +268,7 @@ a.button {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--second);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   margin-top: 1rem;
   max-height: 2.5rem;
@@ -283,15 +276,16 @@ a.button {
   transition: 0.25s;
 }
 
-.listSec button:hover, span a:hover {
+.listSec button:hover,
+span a:hover {
   background-color: var(--first);
   color: var(--second);
 }
 
 .listSec span:hover {
-  border-radius: 0.5rem;
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 0.5rem -0.3rem var(--first);
+  border: 1px solid var(--fifth);
 }
 
 .para {
@@ -302,7 +296,6 @@ a.button {
   color: var(--fifth);
   line-height: 2;
   background-color: var(--third);
-  letter-spacing: 2px;
   padding: 1rem;
 }
 /* .listSec button:hover{
@@ -331,7 +324,7 @@ footer {
 footer p {
   text-align: center;
   /* padding: 1rem; */
-  margin: 2rem 14rem 0 0 ;
+  margin: 2rem 14rem 0 0;
 }
 
 footer a {
@@ -342,7 +335,7 @@ footer li {
   list-style: none;
 }
 
-footer>section {
+footer > section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -363,17 +356,17 @@ footer ul {
   align-items: center;
   text-align: left;
   width: 50%;
-  margin: 0 ;
+  margin: 0;
 }
 
 footer li {
-  padding: .5rem;
+  padding: 0.5rem;
   font-family: 'Playfair Display', serif;
   font-size: 0.8rem;
 }
 
 footer h2 {
   font-size: 1.2rem;
-  padding: 0 0 1rem .5rem;
-  margin: 0 ;
+  padding: 0 0 1rem 0.5rem;
+  margin: 0;
 }

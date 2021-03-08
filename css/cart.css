@@ -13,7 +13,9 @@ a {
   opacity: 1;
   color: var(--first);
 }
-
+button{
+  font-family: 'Yellowtail', cursive;
+}
 button:hover {
   cursor: pointer;
 }
@@ -82,11 +84,12 @@ main section:first-child{
  
 }
 #table li{
-  background-color: var(--third);
   padding: 1rem 0;
   border-radius: 2rem;
   min-width: 8rem;
   max-width: 8rem;
+  font-family: 'Yellowtail', cursive;
+  font-size: 1.5rem;
 }
 #table-cart {
   display: flex;
@@ -100,7 +103,7 @@ main section:first-child{
 #table-cart tr{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   margin: 1rem 0;
   flex: 1;
   width: 100%;
@@ -109,26 +112,25 @@ main section:first-child{
 }
 #table-cart button{
   width: 7rem;
-  height: 3rem;
-  border-radius: 3rem;
-  background-color: var(--third);
+  height: auto;
+  border-radius: 0.5rem;
+  background-color: var(--second);
   color: var(--first);
   border: none;
   transition: 0.25s;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
 }
 #table-cart button:hover{
   background-color: var(--first);
   color: var(--third);
   cursor: pointer;
   transform: translateY(-0.3rem);
-  border-radius: 0.8rem;
   box-shadow: 0 0.5rem 0.5rem -0.3rem var(--first);
 }
 #table-cart tr img{
   width: 5rem;
   border-radius: 1rem;
-  min-height:8rem;
+  max-height:5rem;
 }
 #total-cart{
   display: flex;
@@ -144,7 +146,6 @@ main section:first-child{
 
 #table-cart tr td{
 /* margin-right: 11rem; */
-background-color: var(--third);
 border-radius: 1rem;
 padding: 1rem;
 min-height: 3rem;
@@ -154,17 +155,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-#table-cart tr td:nth-child(1){
- margin-top: 1rem;
- background-color: var(--second);
-}
-#table-cart tr td:nth-child(6){
-  background-color: var(--second);
- }
- #table-cart tr td:nth-child(5){
-   padding: 0;
- }
-
 footer {
   
   font-family: 'Yellowtail', cursive;

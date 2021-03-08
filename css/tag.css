@@ -129,17 +129,18 @@ border: 1px solid var(--first);
   margin: 1rem 0;
   border-style: none;
   background-color: var(--second);
-  font-size: 1rem ;
+  font-size: 1.5rem ;
   color:var(--first);
 }
 button{
   outline: none;
+  font-family: 'Yellowtail', cursive;
 }
 .listSec span{
   display: flex;
   justify-content: space-evenly;
   background-color: var(--second);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   margin-top: 1rem;
   max-height: 2.5rem;
@@ -151,9 +152,9 @@ button{
   color: var(--second);
 }
 .listSec span:hover{
-  border-radius: 0.5rem;
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 0.5rem -0.3rem var(--first);
+  border: 1px solid var(--fifth);
 }
 img {
   opacity: 0.75;
