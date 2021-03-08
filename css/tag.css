@@ -3,7 +3,7 @@
 }
 
 html {
-  font: normal 16px 'Playfair Display', serif;
+  font: normal 16px 'Yellowtail', cursive;
   background-color: var(--second);
 }
 
@@ -94,7 +94,7 @@ section {
     text-align: center;
     margin: 0 0 4rem;
     color: var(--first);
-    font-weight: bold;
+    font-size: 1.5rem;
 }
 .listSec ul li img{
   /* width: 100%; */

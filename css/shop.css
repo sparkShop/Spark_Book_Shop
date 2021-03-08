@@ -3,7 +3,7 @@
 }
 
 html {
-  font: normal 16px 'Playfair Display', serif;
+  font: normal 16px 'Yellowtail', cursive;
   background-color: var(--second);
 }
 
@@ -92,6 +92,7 @@ button{
   margin: 0 auto;
   color: var(--first);
   font-weight: normal;
+  font-size: 1.5rem;
 }
 
 .listSec ul li img {
